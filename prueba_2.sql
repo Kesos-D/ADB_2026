@@ -1,4 +1,4 @@
-use Proyecto_2;
+use Proyecto;
 
 
 
@@ -193,13 +193,4 @@ group by estado
 order by cantidad desc;
 go
 
-create index IX_socio on prestamo (id_socio);
-
-select
-    top 10
-    id_socio,
-    count(id_socio) x
-from prestamo
-group by id_socio;
-
-select * from socio;
+commit TRANSACTION;

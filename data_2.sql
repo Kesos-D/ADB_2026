@@ -4,24 +4,17 @@
 -- # Editorial : Listo
 -- # Libro : Listo
 
-use Proyecto_2;
+/*
+    1) docker exec -u 0 -it sqlserver-2025 sh
+    2) mkdir data
+    3) cp docker cp .\data_2\ sqlserver-2025:\data\
+*/
 
-BEGIN TRANSACTION;
-
-CREATE TABLE #data_temp (
-    id_socio int,
-    dui VARCHAR(10) NOT NULL,
-    nombre VARCHAR(100) NOT NULL,
-    apellido VARCHAR(100) NOT NULL,
-    fecha_nacimiento DATE NOT NULL,
-    sexo CHAR(1) NOT NULL
-);
+use Proyecto;
 go
 
-select * from empleado;
-
-BULK INSERT #data_temp
-FROM '/data_2/socio/socio.csv'
+BULK INSERT socio
+FROM '/data/data_2/socio/socio.csv'
 WITH (
     FORMAT = 'CSV',
     FIRSTROW = 2,
@@ -29,19 +22,7 @@ WITH (
     ROWTERMINATOR = '0x0d0a',
     TABLOCK
 );
-go
 
-select * from #data_temp;
-
-INSERT INTO dbo.socio (dui, nombre, apellido, fecha_nacimiento, sexo)
-SELECT dui, nombre, apellido, fecha_nacimiento, sexo
-FROM #data_temp;
-go
-select * from dbo.libro;
-rollback transaction;
-
-drop table #data_temp
-
-select * from dbo.socio;
+select * from socio;
 
 commit TRANSACTION;

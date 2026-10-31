@@ -1,6 +1,9 @@
 --! Codigo para crear las filas de libro_autor
 use master;
 use Proyecto;
+
+BEGIN TRANSACTION;
+
 with data_autor as (
     select
         id_autor,
@@ -20,16 +23,18 @@ from data_autor a join data_libro l
     on a.rda = l.rdl
 order by id_autor, id_libro;
 
-SELECT
-    id_prestamo,
-    FLOOR(RAND(CHECKSUM(NEWID())) * 100) + 1 AS aleatorio
-FROM prestamo;
+select * from libro_autor;
+
+commit TRANSACTION;
 
 
 -- Si es un numero entre 1-4 -> Libre
 -- Si es un numero entre 5-7 -> Prestado
 -- Si es un numero entre 8-9 -> Reservado
 -- Si es 10 -> Fuera de servicion
+
+BEGIN TRANSACTION;
+
 with data_libro as (
     select
         id_libro
@@ -51,9 +56,15 @@ from data_libro;
 
 select * from ejemplar;
 
+commit transaction;
+
+rollback;
+
 -- Si esta activo el prestamo significa que el ejemplar debe ser -> PRESTADO, RESERVADO
 select * from prestamo;
 select * from ejemplar;
+
+BEGIN TRANSACTION;
 
 with data_prestamo as (
     select
@@ -77,6 +88,8 @@ select
 from data_prestamo dp
 join data_ejemplar de
     on de.de_unique = dp.dp_unique;
+
+commit TRANSACTION;
 
 begin transaction;
 
@@ -313,7 +326,7 @@ select
     a.id_ejemplar,
     a.id_prestamo
 from #tempRegistro a;
-
+commit TRANSACTION;
 select * from prestamo where id_socio = 177;
 
 WITH data_x AS (
