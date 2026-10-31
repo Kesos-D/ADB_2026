@@ -1,0 +1,301 @@
+id_libro,nombre,fecha_publicacion
+1,Cien años de soledad,9/7/1918
+2,Don Quijote de la Mancha,10/25/1900
+3,El principito,11/17/1944
+4,1984,4/7/1922
+5,Orgullo y prejuicio,5/7/1902
+6,Crimen y castigo,8/27/1917
+7,La metamorfosis,10/20/1932
+8,El retrato de Dorian Gray,12/4/1924
+9,Los miserables,4/26/1925
+10,Drácula,7/7/1938
+11,Frankenstein,7/3/1905
+12,El viejo y el mar,5/27/1922
+13,Fahrenheit 451,4/24/1922
+14,Rayuela,7/4/1920
+15,Pedro Páramo,9/30/1919
+16,La sombra del viento,10/17/1916
+17,El nombre de la rosa,3/5/1944
+18,El alquimista,7/8/1932
+19,Moby Dick,7/28/1924
+20,Hamlet,9/7/1937
+21,La Odisea,5/17/1921
+22,La Ilíada,11/7/1916
+23,Macbeth,10/19/1940
+24,Romeo y Julieta,12/8/1924
+25,El Hobbit,8/3/1908
+26,Harry Potter y la piedra filosofal,3/27/1930
+27,Las aventuras de Sherlock Holmes,10/27/1930
+28,Alicia en el país de las maravillas,1/24/1927
+29,Viaje al centro de la Tierra,3/28/1927
+30,Veinte mil leguas de viaje submarino,5/26/1909
+31,La vuelta al mundo en ochenta días,6/23/1944
+32,Robinson Crusoe,11/28/1929
+33,El Conde de Montecristo,2/27/1902
+34,Los tres mosqueteros,11/23/1917
+35,La isla del tesoro,2/5/1904
+36,El fantasma de la ópera,7/26/1903
+37,El código Da Vinci,2/15/1948
+38,Sapiens,7/15/1938
+39,El poder del ahora,7/18/1902
+40,Hábitos atómicos,12/18/1902
+41,El arte de la guerra,9/1/1913
+42,Breve historia del tiempo,12/2/1904
+43,Cosmos,1/6/1937
+44,La divina comedia,7/26/1931
+45,La casa de los espíritus,9/5/1947
+46,El amor en los tiempos del cólera,5/9/1942
+47,Ensayo sobre la ceguera,2/1/1911
+48,Como agua para chocolate,1/18/1939
+49,El túnel,6/18/1909
+50,La ciudad y los perros,5/18/1944
+51,Conversación en La Catedral,5/10/1939
+52,La fiesta del Chivo,10/16/1925
+53,Pantaleón y las visitadoras,7/18/1933
+54,La guerra del fin del mundo,9/9/1913
+55,Travesuras de la niña mala,6/28/1915
+56,El sueño del celta,9/12/1917
+57,La muerte de Artemio Cruz,9/23/1907
+58,Aura,11/24/1948
+59,La región más transparente,5/22/1948
+60,Los detectives salvajes,1/4/1916
+61,2666,2/23/1942
+62,Amuleto,2/15/1925
+63,El salvaje,12/30/1900
+64,Los pasos perdidos,3/17/1932
+65,El siglo de las luces,12/31/1915
+66,El reino de este mundo,8/7/1940
+67,El recurso del método,3/8/1947
+68,La vorágine,12/12/1930
+69,María,6/5/1902
+70,Doña Bárbara,12/31/1929
+71,Huasipungo,5/22/1919
+72,La tregua,8/6/1944
+73,Gracias por el fuego,1/3/1900
+74,Primavera con una esquina rota,4/21/1933
+75,El coronel no tiene quien le escriba,11/28/1915
+76,Crónica de una muerte anunciada,6/1/1932
+77,El otoño del patriarca,12/31/1912
+78,Del amor y otros demonios,3/3/1935
+79,Memoria de mis putas tristes,4/15/1940
+80,Noticia de un secuestro,11/24/1927
+81,Vivir para contarla,6/25/1930
+82,El general en su laberinto,5/2/1914
+83,La increíble y triste historia de la cándida Eréndira,7/19/1927
+84,El amor y la furia,12/9/1904
+85,La casa de Bernarda Alba,11/12/1906
+86,Bodas de sangre,12/14/1938
+87,Yerma,1/31/1904
+88,Luces de bohemia,9/3/1908
+89,Fortunata y Jacinta,12/28/1932
+90,La Regenta,10/16/1904
+91,Niebla,6/13/1927
+92,San Manuel Bueno,3/8/1947
+93,mártir,10/17/1923
+94,Platero y yo,3/3/1907
+95,Campos de Castilla,10/27/1923
+96,Don Juan Tenorio,3/23/1948
+97,La vida es sueño,6/8/1922
+98,Fuenteovejuna,4/15/1933
+99,El burlador de Sevilla,11/25/1903
+100,Lazarillo de Tormes,9/5/1914
+101,La Celestina,12/5/1941
+102,El Buscón,6/3/1926
+103,Los pazos de Ulloa,11/25/1934
+104,Nada,11/26/1939
+105,La familia de Pascual Duarte,3/24/1940
+106,Tiempo de silencio,2/24/1909
+107,La colmena,10/21/1932
+108,Cinco horas con Mario,6/12/1941
+109,Los santos inocentes,9/2/1934
+110,El hereje,2/9/1922
+111,El juego del ángel,12/30/1949
+112,El prisionero del cielo,1/6/1942
+113,Marina,6/27/1923
+114,La trilogía de Nueva York,2/7/1945
+115,La invención de Morel,5/16/1905
+116,El Aleph,1/18/1936
+117,Ficciones,11/8/1930
+118,El libro de arena,7/4/1945
+119,El jardín de senderos que se bifurcan,2/23/1930
+120,El informe de Brodie,5/17/1927
+121,Historia universal de la infamia,10/30/1946
+122,Sobre héroes y tumbas,5/6/1903
+123,El escritor y sus fantasmas,8/1/1927
+124,El entenado,10/14/1908
+125,Zama,9/9/1945
+126,Santa Evita,1/11/1932
+127,Respiración artificial,1/5/1922
+128,La ciudad ausente,9/28/1902
+129,El beso de la mujer araña,8/28/1927
+130,Boquitas pintadas,7/29/1949
+131,Plata quemada,9/16/1944
+132,La muerte y la doncella,1/22/1902
+133,El lugar sin límites,9/27/1909
+134,El obsceno pájaro de la noche,5/7/1937
+135,Hijo de ladrón,9/15/1934
+136,La amortajada,10/24/1934
+137,El lugar donde estuvo el paraíso,3/26/1906
+138,La casa de los espíritus del mar,1/3/1915
+139,El obscuro corazón de la noche,5/29/1924
+140,La mujer habitada,8/8/1925
+141,Sofía de los presagios,12/16/1918
+142,La casa de los conejos,5/5/1924
+143,Distancia de rescate,7/19/1915
+144,Nuestra parte de noche,1/19/1912
+145,Kentukis,1/18/1909
+146,Elena sabe,1/8/1929
+147,Los peligros de fumar en la cama,9/10/1909
+148,Las cosas que perdimos en el fuego,11/17/1925
+149,Cometierra,5/13/1925
+150,El tercer país,5/18/1932
+151,Temporada de huracanes,11/30/1902
+152,Páradais,2/28/1943
+153,La hija única,2/4/1908
+154,El invencible verano de Liliana,1/4/1919
+155,Los abismos,2/17/1902
+156,Mugre rosa,10/27/1928
+157,El viento que arrasa,7/4/1919
+158,Las malas,10/1/1908
+159,Chicas muertas,6/17/1943
+160,El nervio óptico,8/8/1901
+161,La dimensión desconocida,10/18/1920
+162,La perra,7/3/1941
+163,El olvido que seremos,1/13/1946
+164,Delirio,11/15/1903
+165,La multitud errante,3/27/1901
+166,El ruido de las cosas al caer,7/6/1948
+167,Hot Sur,9/9/1933
+168,El cielo a tiros,2/1/1942
+169,La forma de las ruinas,2/10/1909
+170,Los informantes,5/14/1924
+171,El desierto,6/15/1906
+172,El síndrome de Ulises,8/14/1914
+173,Estrella distante,3/1/1931
+174,El espíritu de la ciencia ficción,1/17/1937
+175,Una novelita lumpen,2/4/1928
+176,Monsieur Pain,1/4/1945
+177,El tercer Reich,9/8/1923
+178,Putas asesinas,11/25/1906
+179,Llamadas telefónicas,11/24/1948
+180,La literatura nazi en América,4/4/1906
+181,Los sinsabores del verdadero policía,5/29/1900
+182,El secreto de sus ojos,4/28/1933
+183,La pregunta de sus ojos,4/12/1900
+184,El sueño de los héroes,12/16/1921
+185,Los siete locos,11/4/1939
+186,Los lanzallamas,4/4/1918
+187,El juguete rabioso,6/20/1910
+188,Adán Buenosayres,12/1/1944
+189,El astillero,4/2/1909
+190,Juntacadáveres,2/15/1902
+191,La vida breve,3/2/1920
+192,El pozo,2/9/1907
+193,El país de la canela,2/28/1903
+194,Ursúa,12/23/1940
+195,La serpiente sin ojos,6/10/1915
+196,El amor en los tiempos modernos,10/31/1910
+197,La memoria de las sombras,10/7/1904
+198,El jardín de los recuerdos,10/11/1945
+199,La última estación,12/19/1917
+200,El secreto de la montaña,7/21/1908
+201,Los guardianes del tiempo,9/21/1939
+202,La ciudad de los espejos,5/7/1935
+203,El mapa de los sueños,10/13/1938
+204,La biblioteca olvidada,11/19/1936
+205,El viajero de la noche,2/16/1926
+206,El reino de las sombras,10/1/1903
+207,La puerta de los mundos,3/8/1925
+208,El corazón del invierno,2/21/1938
+209,La canción de las estrellas,11/2/1908
+210,Los caminos del destino,1/28/1927
+211,La torre de cristal,1/1/1947
+212,El bosque de los secretos,1/12/1907
+213,La isla de los recuerdos,12/13/1922
+214,El valle de la luna,4/7/1932
+215,La noche de los cuervos,10/6/1921
+216,El último viajero,4/23/1942
+217,La brújula perdida,9/14/1919
+218,El manuscrito de piedra,6/22/1946
+219,La llave de los sueños,5/2/1947
+220,El reloj de arena,8/6/1915
+221,La casa del acantilado,3/28/1944
+222,El faro de la memoria,3/14/1917
+223,Los hijos del viento,12/29/1909
+224,El guardián de la frontera,2/13/1932
+225,La ciudad sumergida,8/14/1940
+226,El río de las estrellas,2/28/1943
+227,El océano de los recuerdos,10/17/1930
+228,La montaña prohibida,2/4/1919
+229,El secreto del faro,9/28/1909
+230,La biblioteca de medianoche,12/6/1937
+231,El último reino,11/2/1921
+232,Los herederos del tiempo,10/29/1933
+233,La sombra del bosque,8/11/1926
+234,El despertar de los gigantes,12/28/1904
+235,La corona de hielo,3/13/1929
+236,El reino perdido,4/14/1942
+237,La senda de los antiguos,6/23/1921
+238,El templo de la luna,9/19/1949
+239,El bosque encantado,9/13/1942
+240,La fortaleza olvidada,7/31/1931
+241,El príncipe de las sombras,5/31/1949
+242,La reina del norte,7/25/1914
+243,El caballero del amanecer,10/17/1906
+244,El legado de los antiguos,9/1/1910
+245,La guerra de los cinco reinos,10/12/1912
+246,El trono de ceniza,3/1/1912
+247,La espada de cristal,1/4/1919
+248,El reino de los dragones,11/20/1921
+249,La ciudad de las estrellas,8/12/1937
+250,El bosque de los sueños,5/10/1920
+251,El valle de los gigantes,4/12/1923
+252,La torre de los magos,10/3/1912
+253,El secreto de los alquimistas,4/11/1907
+254,La orden de los guardianes,4/9/1943
+255,El códice perdido,2/9/1939
+256,La profecía del último rey,2/11/1916
+257,El mapa de las estrellas,1/24/1917
+258,La corona de los siete mares,10/22/1947
+259,El templo de los olvidados,6/9/1944
+260,El regreso del viajero,6/18/1917
+261,La última profecía,9/7/1932
+262,El legado de la luna,11/3/1906
+263,La guerra de las sombras,7/27/1911
+264,El reino de cristal,10/20/1932
+265,La ciudad de los antiguos,9/20/1901
+266,El secreto de los siete mares,6/1/1935
+267,La espada del destino,7/7/1942
+268,El guardián de las estrellas,10/15/1923
+269,La puerta del tiempo,11/24/1918
+270,El reino bajo la montaña,6/21/1924
+271,La última biblioteca,4/6/1929
+272,El misterio de la torre,9/7/1900
+273,Los viajeros del tiempo,7/21/1936
+274,La historia de los olvidados,8/3/1946
+275,El secreto de la biblioteca,12/27/1900
+276,La casa de las mil puertas,11/8/1921
+277,El último de los guardianes,4/12/1920
+278,La canción del viajero,5/12/1900
+279,El corazón de la montaña,1/19/1923
+280,La sombra de los antiguos,3/28/1932
+281,El camino de los reyes,10/13/1930
+282,La noche de los inmortales,12/1/1930
+283,El despertar del reino,11/2/1906
+284,La corona del viajero,6/24/1902
+285,El secreto de los inmortales,8/15/1925
+286,La ciudad del último amanecer,9/10/1923
+287,El bosque de los reyes,2/28/1941
+288,La torre del tiempo,5/24/1919
+289,El legado de los viajeros,8/7/1941
+290,El reino de la última luna,3/30/1944
+291,La isla de los antiguos,1/5/1935
+292,El guardián del último portal,4/15/1925
+293,La profecía de las estrellas,11/1/1947
+294,El último reino perdido,7/20/1931
+295,Cien años de soledad,3/24/1922
+296,Don Quijote de la Mancha,5/10/1909
+297,El principito,6/8/1919
+298,1984,9/18/1945
+299,Orgullo y prejuicio,2/28/1939
+300,Crimen y castigo,6/23/1943

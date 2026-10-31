@@ -1,0 +1,301 @@
+id_editorial,nombre,correo,telefono,direccion
+1,Penguin Random House,contacto@penguinrandomhouse.com,+1 701295818,"Main Street 126 52276 New York Estados Unidos"
+2,Penguin Books,contacto@penguinbooks.co.uk,+44 336333407,"Baker Street 512 17365 Manchester Reino Unido"
+3,Random House,contacto@randomhouse.com,+1 311129612,"Broadway 505 32023 Boston Estados Unidos"
+4,Vintage Books,contacto@vintagebooks.com,+1 334220171,"Fifth Avenue 36 81413 San Francisco Estados Unidos"
+5,Anchor Books,contacto@anchorbooks.com,+1 457723462,"Main Street 90 70514 Seattle Estados Unidos"
+6,Bantam Books,contacto@bantambooks.com,+1 585973523,"Main Street 710 14776 Seattle Estados Unidos"
+7,Del Rey Books,contacto@delreybooks.com,+1 723330749,"Fifth Avenue 187 04151 Boston Estados Unidos"
+8,Ballantine Books,contacto@ballantinebooks.com,+1 624844257,"Oak Avenue 4 53572 Seattle Estados Unidos"
+9,Crown Publishing Group,contacto@crownpublishinggroup.com,+1 773523033,"Broadway 149 02634 New York Estados Unidos"
+10,Doubleday,contacto@doubleday.com,+1 803478624,"Maple Street 115 24996 Chicago Estados Unidos"
+11,Alfred A. Knopf,contacto@alfredaknopf.com,+1 360646010,"Maple Street 144 04450 Chicago Estados Unidos"
+12,Pantheon Books,contacto@pantheonbooks.com,+1 564322046,"Main Street 420 70657 Chicago Estados Unidos"
+13,Schocken Books,contacto@schockenbooks.com,+1 296600983,"Main Street 365 26744 New York Estados Unidos"
+14,Everyman's Library,contacto@everymanslibrary.co.uk,+44 746357269,"High Street 464 01204 Manchester Reino Unido"
+15,Viking Press,contacto@vikingpress.com,+1 495261534,"Fifth Avenue 499 00896 Seattle Estados Unidos"
+16,HarperCollins,contacto@harpercollins.com,+1 111607140,"Main Street 64 65414 New York Estados Unidos"
+17,Harper Perennial,contacto@harperperennial.com,+1 922162777,"Oak Avenue 461 37533 Chicago Estados Unidos"
+18,William Morrow and Company,contacto@williammorrowandcompan.com,+1 139999433,"Broadway 142 43695 Chicago Estados Unidos"
+19,Avon Books,contacto@avonbooks.com,+1 579129038,"Fifth Avenue 297 90725 San Francisco Estados Unidos"
+20,Ecco Press,contacto@eccopress.com,+1 761594636,"Main Street 880 95766 Boston Estados Unidos"
+21,Houghton Mifflin Harcourt,contacto@houghtonmifflinharcour.com,+1 739629976,"Main Street 103 45215 Boston Estados Unidos"
+22,Mariner Books,contacto@marinerbooks.com,+1 798499395,"Main Street 135 21566 San Francisco Estados Unidos"
+23,Simon & Schuster,contacto@simonschuster.com,+1 561555438,"Oak Avenue 765 67203 Chicago Estados Unidos"
+24,Atria Books,contacto@atriabooks.com,+1 360527293,"Fifth Avenue 988 65082 New York Estados Unidos"
+25,Scribner,contacto@scribner.com,+1 410866763,"Oak Avenue 28 21975 Boston Estados Unidos"
+26,Gallery Books,contacto@gallerybooks.com,+1 134632441,"Broadway 592 42221 New York Estados Unidos"
+27,Pocket Books,contacto@pocketbooks.com,+1 994136189,"Main Street 106 32131 Boston Estados Unidos"
+28,Free Press,contacto@freepress.com,+1 776036251,"Oak Avenue 10 04209 Seattle Estados Unidos"
+29,Little Brown and Company,contacto@littlebrownandcompany.com,+1 906305233,"Broadway 925 84528 Boston Estados Unidos"
+30,Grand Central Publishing,contacto@grandcentralpublishing.com,+1 590809605,"Maple Street 625 19231 Boston Estados Unidos"
+31,Hachette Book Group,contacto@hachettebookgroup.com,+1 264740624,"Main Street 231 93345 Seattle Estados Unidos"
+32,Orbit Books,contacto@orbitbooks.co.uk,+44 803473418,"High Street 882 18671 Oxford Reino Unido"
+33,Basic Books,contacto@basicbooks.com,+1 603988061,"Fifth Avenue 712 12193 San Francisco Estados Unidos"
+34,PublicAffairs,contacto@publicaffairs.com,+1 452301426,"Oak Avenue 445 34820 Seattle Estados Unidos"
+35,Farrar Straus and Giroux,contacto@farrarstrausandgiroux.com,+1 517282165,"Fifth Avenue 946 81033 New York Estados Unidos"
+36,Henry Holt and Company,contacto@henryholtandcompany.com,+1 196600475,"Main Street 182 94029 Chicago Estados Unidos"
+37,Metropolitan Books,contacto@metropolitanbooks.com,+1 463604082,"Fifth Avenue 400 12495 Seattle Estados Unidos"
+38,Picador,contacto@picador.co.uk,+44 967510964,"Church Lane 173 33388 Edinburgh Reino Unido"
+39,St. Martin's Press,contacto@stmartinspress.com,+1 654338332,"Oak Avenue 821 74731 Boston Estados Unidos"
+40,Minotaur Books,contacto@minotaurbooks.com,+1 405715610,"Fifth Avenue 803 24711 Seattle Estados Unidos"
+41,Tor Books,contacto@torbooks.com,+1 697975148,"Main Street 277 22851 Seattle Estados Unidos"
+42,Flatiron Books,contacto@flatironbooks.com,+1 676024646,"Main Street 420 80513 Seattle Estados Unidos"
+43,Bloomsbury Publishing,contacto@bloomsburypublishing.co.uk,+44 800914562,"Church Lane 942 46660 Manchester Reino Unido"
+44,Faber and Faber,contacto@faberandfaber.co.uk,+44 972273044,"High Street 587 21124 Edinburgh Reino Unido"
+45,Profile Books,contacto@profilebooks.co.uk,+44 550810910,"Baker Street 111 80599 Oxford Reino Unido"
+46,Granta Books,contacto@grantabooks.co.uk,+44 569093077,"Baker Street 201 52982 Manchester Reino Unido"
+47,Fourth Estate,contacto@fourthestate.co.uk,+44 623565822,"High Street 933 05230 London Reino Unido"
+48,Canongate Books,contacto@canongatebooks.co.uk,+44 292998487,"King's Road 172 29133 Oxford Reino Unido"
+49,Oxford University Press,contacto@oxforduniversitypress.co.uk,+44 893855774,"King's Road 367 45379 Manchester Reino Unido"
+50,Cambridge University Press,contacto@cambridgeuniversitypre.co.uk,+44 696309621,"Church Lane 356 85654 Oxford Reino Unido"
+51,Yale University Press,contacto@yaleuniversitypress.com,+1 265152522,"Oak Avenue 592 61283 Boston Estados Unidos"
+52,Harvard University Press,contacto@harvarduniversitypress.com,+1 960510174,"Main Street 471 88063 Boston Estados Unidos"
+53,Princeton University Press,contacto@princetonuniversitypre.com,+1 927409706,"Oak Avenue 889 01651 Boston Estados Unidos"
+54,Columbia University Press,contacto@columbiauniversitypres.com,+1 622218519,"Main Street 890 41092 Chicago Estados Unidos"
+55,University of Chicago Press,contacto@universityofchicagopre.com,+1 689970533,"Oak Avenue 296 94057 Chicago Estados Unidos"
+56,MIT Press,contacto@mitpress.com,+1 127780872,"Broadway 656 04260 Chicago Estados Unidos"
+57,Routledge,contacto@routledge.co.uk,+44 569689715,"King's Road 344 21851 Edinburgh Reino Unido"
+58,Springer Nature,contacto@springernature.de,+49 679307968,"Goethestraße 322 66519 Berlín Alemania"
+59,Elsevier,contacto@elsevier.nl,+31 222321761,"Singel 291 97892 Utrecht Países Bajos"
+60,Wiley,contacto@wiley.com,+1 100586444,"Fifth Avenue 351 15544 New York Estados Unidos"
+61,Sourcebooks,contacto@sourcebooks.com,+1 679550743,"Main Street 943 18023 Chicago Estados Unidos"
+62,Chronicle Books,contacto@chroniclebooks.com,+1 278956175,"Maple Street 652 86061 Boston Estados Unidos"
+63,Workman Publishing,contacto@workmanpublishing.com,+1 653789276,"Fifth Avenue 428 19535 Chicago Estados Unidos"
+64,Algonquin Books,contacto@algonquinbooks.com,+1 598948560,"Fifth Avenue 671 41136 Chicago Estados Unidos"
+65,Grove Atlantic,contacto@groveatlantic.com,+1 977269270,"Maple Street 226 31136 San Francisco Estados Unidos"
+66,Grove Press,contacto@grovepress.com,+1 831678450,"Maple Street 317 58926 Chicago Estados Unidos"
+67,Coffee House Press,contacto@coffeehousepress.com,+1 506366305,"Oak Avenue 501 85942 New York Estados Unidos"
+68,Graywolf Press,contacto@graywolfpress.com,+1 472002553,"Fifth Avenue 164 56271 San Francisco Estados Unidos"
+69,Milkweed Editions,contacto@milkweededitions.com,+1 101627650,"Oak Avenue 461 30897 San Francisco Estados Unidos"
+70,Tin House Books,contacto@tinhousebooks.com,+1 743163608,"Fifth Avenue 96 18841 Chicago Estados Unidos"
+71,Sarabande Books,contacto@sarabandebooks.com,+1 516806230,"Oak Avenue 938 50075 Boston Estados Unidos"
+72,Copper Canyon Press,contacto@coppercanyonpress.com,+1 952511386,"Oak Avenue 633 63982 Seattle Estados Unidos"
+73,Beacon Press,contacto@beaconpress.com,+1 554546689,"Broadway 64 10906 Seattle Estados Unidos"
+74,Seven Stories Press,contacto@sevenstoriespress.com,+1 662961518,"Oak Avenue 568 15399 Boston Estados Unidos"
+75,Melville House,contacto@melvillehouse.com,+1 220808562,"Broadway 110 00508 Chicago Estados Unidos"
+76,New Directions Publishing,contacto@newdirectionspublishin.com,+1 119545026,"Broadway 915 82711 Seattle Estados Unidos"
+77,City Lights Publishers,contacto@citylightspublishers.com,+1 459061888,"Fifth Avenue 129 79232 Boston Estados Unidos"
+78,Dover Publications,contacto@doverpublications.com,+1 589907174,"Main Street 2 65100 New York Estados Unidos"
+79,Baen Books,contacto@baenbooks.com,+1 577351931,"Maple Street 523 71989 Seattle Estados Unidos"
+80,DAW Books,contacto@dawbooks.com,+1 709488105,"Oak Avenue 352 40425 Seattle Estados Unidos"
+81,Ace Books,contacto@acebooks.com,+1 815631508,"Oak Avenue 940 81120 Chicago Estados Unidos"
+82,Gollancz,contacto@gollancz.co.uk,+44 180307338,"Church Lane 933 84788 London Reino Unido"
+83,Titan Books,contacto@titanbooks.co.uk,+44 740634521,"Church Lane 805 81403 Oxford Reino Unido"
+84,Scholastic,contacto@scholastic.com,+1 916114478,"Main Street 271 82060 Boston Estados Unidos"
+85,Candlewick Press,contacto@candlewickpress.com,+1 617797915,"Oak Avenue 917 05987 Seattle Estados Unidos"
+86,Walker Books,contacto@walkerbooks.co.uk,+44 412761490,"Church Lane 389 10383 Manchester Reino Unido"
+87,Puffin Books,contacto@puffinbooks.co.uk,+44 218708509,"Church Lane 512 96839 London Reino Unido"
+88,Ladybird Books,contacto@ladybirdbooks.co.uk,+44 598634586,"Baker Street 318 12964 London Reino Unido"
+89,Dorling Kindersley,contacto@dorlingkindersley.co.uk,+44 771957877,"High Street 153 46430 Oxford Reino Unido"
+90,Usborne Publishing,contacto@usbornepublishing.co.uk,+44 607667193,"Church Lane 709 27604 Manchester Reino Unido"
+91,Nosy Crow,contacto@nosycrow.co.uk,+44 533325357,"Baker Street 531 04388 Oxford Reino Unido"
+92,Taschen,contacto@taschen.de,+49 889042749,"Lindenallee 880 96440 Múnich Alemania"
+93,Phaidon Press,contacto@phaidonpress.co.uk,+44 315249152,"King's Road 830 87222 London Reino Unido"
+94,Thames & Hudson,contacto@thameshudson.co.uk,+44 845769960,"King's Road 837 78339 Manchester Reino Unido"
+95,Laurence King Publishing,contacto@laurencekingpublishing.co.uk,+44 325069504,"Church Lane 141 62139 Edinburgh Reino Unido"
+96,Prestel Publishing,contacto@prestelpublishing.de,+49 513735257,"Lindenallee 453 67756 Múnich Alemania"
+97,Pushkin Press,contacto@pushkinpress.co.uk,+44 430394274,"High Street 114 10938 Oxford Reino Unido"
+98,Fitzcarraldo Editions,contacto@fitzcarraldoeditions.co.uk,+44 561658405,"King's Road 468 68500 London Reino Unido"
+99,And Other Stories,contacto@andotherstories.co.uk,+44 664489666,"Church Lane 353 81444 Manchester Reino Unido"
+100,New York Review Books,contacto@newyorkreviewbooks.com,+1 404608796,"Broadway 281 40949 San Francisco Estados Unidos"
+101,Europa Editions,contacto@europaeditions.com,+1 199120375,"Main Street 925 38622 Chicago Estados Unidos"
+102,Archipelago Books,contacto@archipelagobooks.com,+1 643045656,"Fifth Avenue 909 43012 Seattle Estados Unidos"
+103,Open Letter Books,contacto@openletterbooks.com,+1 200296779,"Fifth Avenue 204 68169 Seattle Estados Unidos"
+104,Deep Vellum,contacto@deepvellum.com,+1 188994634,"Broadway 720 37804 San Francisco Estados Unidos"
+105,Charco Press,contacto@charcopress.co.uk,+44 529368124,"Church Lane 153 62948 Oxford Reino Unido"
+106,Tilted Axis Press,contacto@tiltedaxispress.co.uk,+44 527529885,"Baker Street 327 66134 Oxford Reino Unido"
+107,Two Lines Press,contacto@twolinespress.com,+1 257329421,"Fifth Avenue 45 12390 New York Estados Unidos"
+108,Transit Books,contacto@transitbooks.com,+1 302147468,"Broadway 726 36500 Seattle Estados Unidos"
+109,Penguin Classics,contacto@penguinclassics.co.uk,+44 131720789,"King's Road 39 86130 London Reino Unido"
+110,Pearson,contacto@pearson.co.uk,+44 238754600,"Baker Street 671 86636 Manchester Reino Unido"
+111,McGraw-Hill,contacto@mcgrawhill.com,+1 139424408,"Fifth Avenue 902 86763 New York Estados Unidos"
+112,Cengage,contacto@cengage.com,+1 212219029,"Oak Avenue 297 12361 Boston Estados Unidos"
+113,Taylor & Francis,contacto@taylorfrancis.co.uk,+44 170673552,"High Street 249 15483 Edinburgh Reino Unido"
+114,Palgrave Macmillan,contacto@palgravemacmillan.co.uk,+44 664387092,"King's Road 81 50910 Edinburgh Reino Unido"
+115,CRC Press,contacto@crcpress.com,+1 896478807,"Fifth Avenue 356 48723 San Francisco Estados Unidos"
+116,Wolters Kluwer,contacto@wolterskluwer.nl,+31 132172708,"Singel 292 58700 Ámsterdam Países Bajos"
+117,De Gruyter,contacto@degruyter.de,+49 913687383,"Lindenallee 460 80017 Berlín Alemania"
+118,Brill,contacto@brill.nl,+31 650140885,"Prinsengracht 177 04730 Ámsterdam Países Bajos"
+119,Mohr Siebeck,contacto@mohrsiebeck.de,+49 311517340,"Lindenallee 603 09567 Hamburgo Alemania"
+120,Edward Elgar Publishing,contacto@edwardelgarpublishing.co.uk,+44 895887640,"High Street 882 21244 Oxford Reino Unido"
+121,Grupo Planeta,contacto@grupoplaneta.es,+34 752882702,"Avenida de la Libertad 163 14290 Sevilla España"
+122,Seix Barral,contacto@seixbarral.es,+34 528808696,"Calle Mayor 415 36103 Madrid España"
+123,Espasa,contacto@espasa.es,+34 259848349,"Calle Real 709 01517 Barcelona España"
+124,Ediciones Destino,contacto@edicionesdestino.es,+34 302684697,"Calle Real 448 92332 Madrid España"
+125,Anagrama,contacto@anagrama.es,+34 141075881,"Calle Mayor 33 46120 Barcelona España"
+126,Tusquets Editores,contacto@tusquetseditores.es,+34 971166014,"Paseo del Prado 261 67495 Valencia España"
+127,Alfaguara,contacto@alfaguara.es,+34 858971522,"Calle Gran Vía 79 17162 Barcelona España"
+128,Grupo Santillana,contacto@gruposantillana.es,+34 472037435,"Calle Real 317 82398 Sevilla España"
+129,Aguilar,contacto@aguilar.es,+34 463665234,"Calle Gran Vía 814 00646 Sevilla España"
+130,RBA Libros,contacto@rbalibros.es,+34 583320612,"Calle Mayor 588 73041 Valencia España"
+131,Grijalbo,contacto@grijalbo.es,+34 274422569,"Calle Real 959 17483 Barcelona España"
+132,Plaza & Janés,contacto@plazajanes.es,+34 525994726,"Avenida de la Libertad 700 65444 Madrid España"
+133,Debolsillo,contacto@debolsillo.es,+34 561515486,"Paseo del Prado 740 73874 Madrid España"
+134,Punto de Lectura,contacto@puntodelectura.es,+34 202662373,"Calle Real 538 63215 Sevilla España"
+135,Suma de Letras,contacto@sumadeletras.es,+34 580885474,"Calle Mayor 624 16830 Valencia España"
+136,Ediciones SM,contacto@edicionessm.es,+34 891848367,"Avenida de la Libertad 27 59090 Sevilla España"
+137,Edelvives,contacto@edelvives.es,+34 784753126,"Calle Mayor 530 08789 Barcelona España"
+138,Edebé,contacto@edebe.es,+34 189601867,"Calle Gran Vía 903 80186 Sevilla España"
+139,Anaya,contacto@anaya.es,+34 960011027,"Paseo del Prado 662 81575 Madrid España"
+140,Vicens Vives,contacto@vicensvives.es,+34 511803262,"Avenida de la Libertad 77 80889 Sevilla España"
+141,Barcanova,contacto@barcanova.es,+34 926365041,"Calle Real 955 77855 Madrid España"
+142,Editorial Cruïlla,contacto@editorialcruilla.es,+34 838713342,"Calle Gran Vía 791 54128 Barcelona España"
+143,Editorial Bruño,contacto@editorialbruno.es,+34 133158068,"Avenida de la Libertad 111 70301 Madrid España"
+144,Editorial Everest,contacto@editorialeverest.es,+34 223893844,"Avenida de la Libertad 652 31026 Madrid España"
+145,Ediciones Pirámide,contacto@edicionespiramide.es,+34 109659571,"Calle Real 735 72246 Sevilla España"
+146,Narcea Ediciones,contacto@narceaediciones.es,+34 590193963,"Calle Real 808 92604 Madrid España"
+147,Editorial Trotta,contacto@editorialtrotta.es,+34 509239265,"Calle Mayor 218 83467 Madrid España"
+148,Ediciones Cátedra,contacto@edicionescatedra.es,+34 182782460,"Avenida de la Libertad 751 03514 Valencia España"
+149,Editorial Castalia,contacto@editorialcastalia.es,+34 982471711,"Calle Mayor 363 31196 Sevilla España"
+150,Alianza Editorial,contacto@alianzaeditorial.es,+34 571801992,"Paseo del Prado 959 56837 Madrid España"
+151,Editorial Crítica,contacto@editorialcritica.es,+34 137173595,"Calle Real 766 71091 Valencia España"
+152,Editorial Kairós,contacto@editorialkairos.es,+34 283308527,"Paseo del Prado 234 78225 Valencia España"
+153,Paidós,contacto@paidos.es,+34 199754550,"Calle Mayor 865 36530 Madrid España"
+154,Editorial Herder,contacto@editorialherder.es,+34 709499132,"Calle Mayor 276 66977 Madrid España"
+155,Siglo XXI Editores,contacto@sigloxxieditores.es,+34 747005369,"Calle Real 617 70256 Madrid España"
+156,Lumen,contacto@lumen.es,+34 729374152,"Calle Mayor 424 84961 Barcelona España"
+157,Literatura Random House,contacto@literaturarandomhouse.es,+34 698791596,"Calle Real 241 82145 Madrid España"
+158,Reservoir Books,contacto@reservoirbooks.es,+34 714148066,"Avenida de la Libertad 506 08920 Sevilla España"
+159,Astiberri Ediciones,contacto@astiberriediciones.es,+34 243565888,"Calle Gran Vía 968 52703 Barcelona España"
+160,Norma Editorial,contacto@normaeditorial.es,+34 703393692,"Avenida de la Libertad 996 27676 Madrid España"
+161,Fondo de Cultura Económica,contacto@fondodeculturaeconomic.com.mx,+52 379395478,"Avenida Insurgentes 290 41296 Guadalajara México"
+162,Ediciones Era,contacto@edicionesera.com.mx,+52 439075251,"Avenida Reforma 64 59345 Ciudad de México México"
+163,Editorial Joaquín Mortiz,contacto@editorialjoaquinmortiz.com.mx,+52 866993882,"Avenida Insurgentes 384 31018 Monterrey México"
+164,Grupo Editorial Patria,contacto@grupoeditorialpatria.com.mx,+52 424826986,"Avenida Reforma 45 23063 Guadalajara México"
+165,Editorial Porrúa,contacto@editorialporrua.com.mx,+52 175780760,"Avenida Insurgentes 187 84019 Monterrey México"
+166,Editorial Trillas,contacto@editorialtrillas.com.mx,+52 580629477,"Avenida Insurgentes 91 20572 Guadalajara México"
+167,Oceano,contacto@oceano.com.mx,+52 328360579,"Calle Madero 148 65399 Ciudad de México México"
+168,Ediciones B,contacto@edicionesb.com.mx,+52 155460778,"Calle Madero 826 43577 Monterrey México"
+169,Editorial Sudamericana,contacto@editorialsudamericana.com.ar,+54 574953577,"Avenida Santa Fe 912 04301 Rosario Argentina"
+170,Emecé Editores,contacto@emeceeditores.com.ar,+54 686336475,"Calle Lavalle 658 68426 Buenos Aires Argentina"
+171,Interzona,contacto@interzona.com.ar,+54 640831975,"Calle Florida 766 92393 Buenos Aires Argentina"
+172,Eterna Cadencia,contacto@eternacadencia.com.ar,+54 642966089,"Calle Florida 450 41707 Rosario Argentina"
+173,Mansalva,contacto@mansalva.com.ar,+54 713476616,"Avenida Corrientes 857 14643 Rosario Argentina"
+174,Beatriz Viterbo Editora,contacto@beatrizviterboeditora.com.ar,+54 548645570,"Calle Florida 729 14855 Rosario Argentina"
+175,Adriana Hidalgo Editora,contacto@adrianahidalgoeditora.com.ar,+54 911132611,"Avenida Corrientes 608 47270 Rosario Argentina"
+176,Caja Negra Editora,contacto@cajanegraeditora.com.ar,+54 599688883,"Calle Lavalle 144 86284 Córdoba Argentina"
+177,Editorial Losada,contacto@editoriallosada.com.ar,+54 760105321,"Avenida Corrientes 406 06979 Rosario Argentina"
+178,Ediciones Godot,contacto@edicionesgodot.com.ar,+54 867299715,"Avenida Santa Fe 224 54257 Córdoba Argentina"
+179,Editorial Planeta Argentina,contacto@editorialplanetaargent.com.ar,+54 679925320,"Avenida Corrientes 410 58411 Buenos Aires Argentina"
+180,Companhia das Letras,contacto@companhiadasletras.com.br,+55 517319949,"Avenida Brasil 766 25056 Río de Janeiro Brasil"
+181,Editora Record,contacto@editorarecord.com.br,+55 362009212,"Avenida Paulista 510 90311 São Paulo Brasil"
+182,Nova Fronteira,contacto@novafronteira.com.br,+55 423119801,"Rua Augusta 294 09886 Río de Janeiro Brasil"
+183,Rocco,contacto@rocco.com.br,+55 828406166,"Rua das Flores 587 07267 São Paulo Brasil"
+184,Editora Objetiva,contacto@editoraobjetiva.com.br,+55 681213447,"Avenida Brasil 787 30032 Belo Horizonte Brasil"
+185,Sextante,contacto@sextante.com.br,+55 920696102,"Avenida Paulista 188 59020 São Paulo Brasil"
+186,Editora Ática,contacto@editoraatica.com.br,+55 902486021,"Rua Augusta 25 39642 Río de Janeiro Brasil"
+187,Editora Moderna,contacto@editoramoderna.com.br,+55 896077980,"Avenida Paulista 892 38399 São Paulo Brasil"
+188,Editora Saraiva,contacto@editorasaraiva.com.br,+55 696832664,"Avenida Brasil 503 83509 Río de Janeiro Brasil"
+189,Globo Livros,contacto@globolivros.com.br,+55 153993465,"Rua das Flores 125 98635 Belo Horizonte Brasil"
+190,Editora Leya,contacto@editoraleya.com.br,+55 433476286,"Rua das Flores 338 46591 Río de Janeiro Brasil"
+191,Éditions Gallimard,contacto@editionsgallimard.fr,+33 825405084,"Boulevard Saint-Michel 466 31066 Marsella Francia"
+192,Flammarion,contacto@flammarion.fr,+33 239032947,"Boulevard Saint-Michel 919 76632 Lyon Francia"
+193,Éditions du Seuil,contacto@editionsduseuil.fr,+33 574893592,"Boulevard Saint-Michel 897 73745 Marsella Francia"
+194,Éditions Grasset,contacto@editionsgrasset.fr,+33 803932097,"Avenue Victor Hugo 203 01938 Lyon Francia"
+195,Fayard,contacto@fayard.fr,+33 208593396,"Rue de la Paix 952 81323 Burdeos Francia"
+196,Plon,contacto@plon.fr,+33 657710798,"Rue de la Paix 201 84120 Burdeos Francia"
+197,Robert Laffont,contacto@robertlaffont.fr,+33 522320564,"Avenue Victor Hugo 558 96591 Marsella Francia"
+198,Albin Michel,contacto@albinmichel.fr,+33 102144082,"Rue du Faubourg 582 81701 Burdeos Francia"
+199,Actes Sud,contacto@actessud.fr,+33 802491118,"Rue du Faubourg 736 49208 Burdeos Francia"
+200,Les Éditions de Minuit,contacto@leseditionsdeminuit.fr,+33 362735287,"Avenue Victor Hugo 387 31468 Burdeos Francia"
+201,Éditions POL,contacto@editionspol.fr,+33 990611410,"Rue de la Paix 318 01086 Lyon Francia"
+202,Éditions Verdier,contacto@editionsverdier.fr,+33 686399856,"Boulevard Saint-Michel 652 43075 Burdeos Francia"
+203,Gallimard Jeunesse,contacto@gallimardjeunesse.fr,+33 228436809,"Rue du Faubourg 80 00008 Burdeos Francia"
+204,Hachette Livre,contacto@hachettelivre.fr,+33 130756483,"Rue de la Paix 931 18206 Marsella Francia"
+205,Nathan,contacto@nathan.fr,+33 299252342,"Boulevard Saint-Michel 386 12057 Marsella Francia"
+206,Bayard Presse,contacto@bayardpresse.fr,+33 564429917,"Avenue Victor Hugo 461 85381 Marsella Francia"
+207,Éditions Milan,contacto@editionsmilan.fr,+33 302911157,"Rue du Faubourg 885 87434 Burdeos Francia"
+208,Belin Éditeur,contacto@belinediteur.fr,+33 325042771,"Rue de la Paix 547 65609 Burdeos Francia"
+209,Presses Universitaires de France,contacto@pressesuniversitairesd.fr,+33 166292167,"Boulevard Saint-Michel 152 86971 Burdeos Francia"
+210,Éditions La Découverte,contacto@editionsladecouverte.fr,+33 189351258,"Rue du Faubourg 736 61829 Burdeos Francia"
+211,Éditions Denoël,contacto@editionsdenoel.fr,+33 174204879,"Avenue Victor Hugo 205 64538 Marsella Francia"
+212,Le Livre de Poche,contacto@lelivredepoche.fr,+33 271735383,"Boulevard Saint-Michel 198 33634 Burdeos Francia"
+213,Éditions J'ai lu,contacto@editionsjailu.fr,+33 310602786,"Avenue Victor Hugo 798 84277 Marsella Francia"
+214,Éditions Payot & Rivages,contacto@editionspayotrivages.fr,+33 566510258,"Boulevard Saint-Michel 205 22339 Marsella Francia"
+215,Éditions Zulma,contacto@editionszulma.fr,+33 873269100,"Rue du Faubourg 276 27822 Marsella Francia"
+216,Éditions de l'Olivier,contacto@editionsdelolivier.fr,+33 382447625,"Rue du Faubourg 516 36447 Marsella Francia"
+217,Éditions de La Martinière,contacto@editionsdelamartiniere.fr,+33 991636101,"Rue du Faubourg 842 92856 Marsella Francia"
+218,Larousse,contacto@larousse.fr,+33 786961416,"Avenue Victor Hugo 241 12890 Marsella Francia"
+219,Hatier,contacto@hatier.fr,+33 475336249,"Boulevard Saint-Michel 211 86228 Marsella Francia"
+220,Magnard,contacto@magnard.fr,+33 645650132,"Rue de la Paix 309 14789 París Francia"
+221,Suhrkamp Verlag,contacto@suhrkampverlag.de,+49 374196642,"Bahnhofstraße 513 99455 Berlín Alemania"
+222,S. Fischer Verlag,contacto@sfischerverlag.de,+49 478635509,"Hauptstraße 926 04975 Múnich Alemania"
+223,Rowohlt Verlag,contacto@rowohltverlag.de,+49 589166384,"Bahnhofstraße 832 76109 Hamburgo Alemania"
+224,Deutscher Taschenbuch Verlag,contacto@deutschertaschenbuchve.de,+49 597943760,"Goethestraße 870 33725 Hamburgo Alemania"
+225,Carl Hanser Verlag,contacto@carlhanserverlag.de,+49 189397999,"Goethestraße 76 63751 Berlín Alemania"
+226,Piper Verlag,contacto@piperverlag.de,+49 893916620,"Bahnhofstraße 413 60838 Hamburgo Alemania"
+227,Heyne Verlag,contacto@heyneverlag.de,+49 285077349,"Bahnhofstraße 368 12672 Múnich Alemania"
+228,Goldmann Verlag,contacto@goldmannverlag.de,+49 703292583,"Hauptstraße 847 86250 Berlín Alemania"
+229,Ullstein Verlag,contacto@ullsteinverlag.de,+49 619375151,"Bahnhofstraße 192 69725 Berlín Alemania"
+230,Klett-Cotta,contacto@klettcotta.de,+49 190450887,"Hauptstraße 450 05921 Berlín Alemania"
+231,C. H. Beck,contacto@chbeck.de,+49 983748234,"Hauptstraße 970 18934 Berlín Alemania"
+232,Aufbau Verlag,contacto@aufbauverlag.de,+49 776179728,"Hauptstraße 875 78786 Berlín Alemania"
+233,Philipp Reclam jun.,contacto@philippreclamjun.de,+49 973322896,"Lindenallee 319 06039 Berlín Alemania"
+234,Insel Verlag,contacto@inselverlag.de,+49 284400799,"Lindenallee 706 49053 Berlín Alemania"
+235,Kiepenheuer & Witsch,contacto@kiepenheuerwitsch.de,+49 447372617,"Lindenallee 9 25244 Múnich Alemania"
+236,Verlag Klaus Wagenbach,contacto@verlagklauswagenbach.de,+49 646700124,"Bahnhofstraße 379 59516 Berlín Alemania"
+237,DuMont Buchverlag,contacto@dumontbuchverlag.de,+49 764671959,"Hauptstraße 354 49182 Berlín Alemania"
+238,Galiani Berlin,contacto@galianiberlin.de,+49 971423105,"Bahnhofstraße 179 98829 Fráncfort Alemania"
+239,Carlsen Verlag,contacto@carlsenverlag.de,+49 483395188,"Bahnhofstraße 61 67858 Berlín Alemania"
+240,Ravensburger,contacto@ravensburger.de,+49 824085359,"Hauptstraße 131 47127 Hamburgo Alemania"
+241,Oetinger,contacto@oetinger.de,+49 237291696,"Bahnhofstraße 958 92642 Fráncfort Alemania"
+242,Loewe Verlag,contacto@loeweverlag.de,+49 285476315,"Hauptstraße 718 80786 Fráncfort Alemania"
+243,Beltz & Gelberg,contacto@beltzgelberg.de,+49 450529707,"Lindenallee 281 68167 Múnich Alemania"
+244,Bastei Lübbe,contacto@basteilubbe.de,+49 973273954,"Bahnhofstraße 826 05297 Múnich Alemania"
+245,Droemer Knaur,contacto@droemerknaur.de,+49 853908333,"Lindenallee 717 97126 Fráncfort Alemania"
+246,Hanser Berlin,contacto@hanserberlin.de,+49 185123760,"Goethestraße 330 13798 Fráncfort Alemania"
+247,Büchergilde Gutenberg,contacto@buchergildegutenberg.de,+49 490869329,"Hauptstraße 906 75769 Hamburgo Alemania"
+248,Residenz Verlag,contacto@residenzverlag.at,+43 371485510,"Ringstraße 428 76121 Graz Austria"
+249,Zsolnay Verlag,contacto@zsolnayverlag.at,+43 765219577,"Mariahilfer Straße 371 45732 Viena Austria"
+250,Diogenes Verlag,contacto@diogenesverlag.ch,+41 604407314,"Bahnhofstrasse 379 23318 Zúrich Suiza"
+251,Arnoldo Mondadori Editore,contacto@arnoldomondadorieditor.it,+39 447808356,"Corso Vittorio Emanuele 79 21353 Florencia Italia"
+252,Rizzoli,contacto@rizzoli.it,+39 445457390,"Via Garibaldi 987 21966 Turín Italia"
+253,Giulio Einaudi Editore,contacto@giulioeinaudieditore.it,+39 541747548,"Piazza Duomo 580 23094 Milán Italia"
+254,Giangiacomo Feltrinelli Editore,contacto@giangiacomofeltrinelli.it,+39 242902369,"Piazza Duomo 523 72803 Milán Italia"
+255,Garzanti,contacto@garzanti.it,+39 937010146,"Piazza Duomo 66 25163 Turín Italia"
+256,Bompiani,contacto@bompiani.it,+39 270496510,"Corso Vittorio Emanuele 261 84148 Milán Italia"
+257,Adelphi Edizioni,contacto@adelphiedizioni.it,+39 175549778,"Corso Vittorio Emanuele 97 99380 Milán Italia"
+258,Sellerio Editore,contacto@sellerioeditore.it,+39 179267150,"Via Roma 693 75790 Turín Italia"
+259,Neri Pozza Editore,contacto@neripozzaeditore.it,+39 624887147,"Via Roma 208 12521 Roma Italia"
+260,Minimum Fax,contacto@minimumfax.it,+39 855737914,"Via Roma 141 36064 Florencia Italia"
+261,Edizioni E/O,contacto@edizionieo.it,+39 642182581,"Corso Vittorio Emanuele 650 08943 Milán Italia"
+262,Fandango Libri,contacto@fandangolibri.it,+39 456751191,"Corso Vittorio Emanuele 825 69492 Florencia Italia"
+263,Ponte alle Grazie,contacto@ponteallegrazie.it,+39 987865239,"Corso Vittorio Emanuele 147 07335 Turín Italia"
+264,Il Saggiatore,contacto@ilsaggiatore.it,+39 239047558,"Piazza Duomo 587 04048 Milán Italia"
+265,Editori Laterza,contacto@editorilaterza.it,+39 105631871,"Corso Vittorio Emanuele 764 15824 Turín Italia"
+266,Il Mulino,contacto@ilmulino.it,+39 890387759,"Piazza Duomo 939 94111 Turín Italia"
+267,Zanichelli,contacto@zanichelli.it,+39 209987765,"Corso Vittorio Emanuele 899 87047 Turín Italia"
+268,Hoepli,contacto@hoepli.it,+39 636720639,"Via Garibaldi 8 77966 Florencia Italia"
+269,Giunti Editore,contacto@giuntieditore.it,+39 826791341,"Corso Vittorio Emanuele 998 94755 Turín Italia"
+270,Salani Editore,contacto@salanieditore.it,+39 213286102,"Piazza Duomo 135 57313 Milán Italia"
+271,Dom Quixote,contacto@domquixote.pt,+351 133113776,"Rua Augusta 100 35204 Coímbra Portugal"
+272,Editorial Caminho,contacto@editorialcaminho.pt,+351 404541723,"Rua Garrett 492 52888 Oporto Portugal"
+273,Bertrand Editora,contacto@bertrandeditora.pt,+351 653216458,"Rua Augusta 884 01603 Coímbra Portugal"
+274,Porto Editora,contacto@portoeditora.pt,+351 756665703,"Rua Garrett 276 52944 Coímbra Portugal"
+275,Assírio & Alvim,contacto@assirioalvim.pt,+351 522142718,"Praça do Comércio 806 24639 Lisboa Portugal"
+276,Relógio D'Água,contacto@relogiodagua.pt,+351 712254415,"Rua Augusta 816 57494 Oporto Portugal"
+277,Tinta-da-China,contacto@tintadachina.pt,+351 976068190,"Rua Garrett 367 78510 Oporto Portugal"
+278,De Bezige Bij,contacto@debezigebij.nl,+31 677945495,"Damrak 548 90573 Ámsterdam Países Bajos"
+279,Querido,contacto@querido.nl,+31 886515363,"Damrak 478 44373 Ámsterdam Países Bajos"
+280,Meulenhoff,contacto@meulenhoff.nl,+31 520752125,"Keizersgracht 982 25943 Róterdam Países Bajos"
+281,Atlas Contact,contacto@atlascontact.nl,+31 612101629,"Prinsengracht 605 61742 Róterdam Países Bajos"
+282,Prometheus,contacto@prometheus.nl,+31 316861818,"Prinsengracht 852 15099 Ámsterdam Países Bajos"
+283,Albert Bonniers Förlag,contacto@albertbonniersforlag.se,+46 166053013,"Vasagatan 916 09421 Gotemburgo Suecia"
+284,Norstedts,contacto@norstedts.se,+46 971194986,"Vasagatan 101 37392 Estocolmo Suecia"
+285,Wahlström & Widstrand,contacto@wahlstromwidstrand.se,+46 615434076,"Storgatan 371 32393 Estocolmo Suecia"
+286,Natur & Kultur,contacto@naturkultur.se,+46 348622761,"Drottninggatan 364 06700 Malmö Suecia"
+287,Gyldendal,contacto@gyldendal.dk,+45 315760710,"Strøget 558 72128 Odense Dinamarca"
+288,Gyldendal Norsk Forlag,contacto@gyldendalnorskforlag.no,+47 410615585,"Karl Johans gate 749 09816 Bergen Noruega"
+289,Aschehoug,contacto@aschehoug.no,+47 972663915,"Karl Johans gate 397 62127 Oslo Noruega"
+290,Cappelen Damm,contacto@cappelendamm.no,+47 972125503,"Karl Johans gate 384 08121 Oslo Noruega"
+291,Kodansha,contacto@kodansha.co.jp,+81 545322401,"Ginza 608 21345 Tokio Japón"
+292,Iwanami Shoten,contacto@iwanamishoten.co.jp,+81 604495860,"Ginza 282 53561 Osaka Japón"
+293,Shinchosha,contacto@shinchosha.co.jp,+81 930988545,"Ginza 786 41743 Tokio Japón"
+294,Kadokawa,contacto@kadokawa.co.jp,+81 812294342,"Ginza 197 22854 Tokio Japón"
+295,Shueisha,contacto@shueisha.co.jp,+81 934183252,"Chiyoda 3 97275 Tokio Japón"
+296,People's Literature Publishing House,contacto@peoplesliteraturepubli.cn,+86 342419296,"Nanjing Road 749 19181 Pekín China"
+297,Commercial Press,contacto@commercialpress.cn,+86 101035541,"Zhongshan 283 85558 Pekín China"
+298,Eksmo,contacto@eksmo.ru,+7 909548400,"Arbat 345 44033 Moscú Rusia"
+299,AST,contacto@ast.ru,+7 178864959,"Arbat 214 68743 Moscú Rusia"
+300,Azbuka-Attikus,contacto@azbukaattikus.ru,+7 694780290,"Nevsky Prospekt 979 57654 Moscú Rusia"

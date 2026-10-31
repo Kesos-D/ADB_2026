@@ -1,0 +1,2001 @@
+id_libro,nombre,fecha_publicacion
+1,Ficticio Motor,1743-11-16
+2,Conectado Conflicto,1640-10-09
+3,Erróneo Verano,1782-06-26
+4,Ligero Hostal,1600-10-21
+5,Compacto Bisonte,1789-10-25
+6,Realista Huerto,1834-11-27
+7,Mediocre Cabra,1722-03-17
+8,Altruista Hígado,1630-02-17
+9,Justo Ansiedad,1542-04-04
+10,Evidente Frente,1606-11-26
+11,Marino Harina,1957-10-13
+12,Insípido Papaya,1628-10-09
+13,Indignado Alegría,1580-10-06
+14,Real Timón,1777-03-22
+15,Tiránico Cantante,1734-05-02
+16,Entero Banco,1503-03-17
+17,Tranquilo Sonrisa,1869-01-17
+18,Fangoso Arado,1634-02-20
+19,Avaro Guiso,1897-03-20
+20,Vengativo Campanario,1953-03-15
+21,Fresco Retrato,1590-05-16
+22,Rojo Culpa,1510-04-02
+23,Menor Pala,1645-05-02
+24,Malo Mediodía,1772-07-03
+25,Cortés Vaca,1861-11-01
+26,Zurdo Tubería,1884-10-21
+27,Incompleto Avalancha,1761-01-03
+28,Distraído Señora,1749-06-25
+29,Esponjoso Margarita,1656-09-18
+30,Íntimo Cloaca,1860-06-15
+31,Astuto Alianza,1784-03-16
+32,Terrenal Nacimiento,1840-05-24
+33,Enorme Narración,1614-06-05
+34,Calmado Ogro,1502-09-25
+35,Rebelde Oficina,1763-03-14
+36,Práctico Aula,1725-07-08
+37,Compartido Ciprés,1829-01-13
+38,Idealista Derrota,1967-05-04
+39,Caliente Actor,1705-09-26
+40,Flaco Marido,1816-09-17
+41,Sano Círculo,1713-07-26
+42,Grosero General,1748-12-09
+43,Acompañado Suspiro,1766-01-14
+44,Contrario Rencor,1570-07-09
+45,Concreto Alcantarilla,1782-07-11
+46,Severo Prólogo,1600-12-08
+47,Oculto Tienda,1692-11-04
+48,Pícaro Lector,1662-01-12
+49,Vigoroso Granero,1539-08-24
+50,Nostálgico Collar,1705-04-21
+51,Arenoso Calabaza,1955-07-22
+52,Alegre Caballo,1767-07-05
+53,Tímido Negocio,1966-01-07
+54,Egoísta Pico,1588-11-14
+55,Tibio Joven,1874-07-14
+56,Idéntico Ruido,1564-05-25
+57,Parecido Pintor,1858-03-20
+58,Fuerte Matraca,1815-04-24
+59,Feliz Azar,1714-02-14
+60,Atento Origen,1731-06-10
+61,Grande Grito,1730-02-22
+62,Verdadero Balcón,1871-03-28
+63,Débil Huracán,1764-01-28
+64,Diestro Bronce,1607-03-27
+65,Implacable Madurez,1514-03-27
+66,Complementario Premio,1815-07-15
+67,Habitual Orca,1956-12-07
+68,Decidido Cuello,1965-09-02
+69,Apestoso Ballet,1511-04-10
+70,Plural Linterna,1945-02-13
+71,Puro Marco,1820-06-17
+72,Específico Estudiante,1917-09-23
+73,Cierto Alarido,1848-01-10
+74,Aproximado Fondo,1733-08-10
+75,Metódico Cable,1923-07-28
+76,Limpio Horizonte,1863-08-02
+77,Férreo Cueva,1931-10-16
+78,Intransigente Península,1961-07-14
+79,Rico Candado,1558-07-13
+80,Seco Salchicha,1837-09-26
+81,Modesto Estatua,1816-08-26
+82,Individual Sonaja,1750-07-21
+83,Salado Silencio,1666-02-15
+84,Libre Azada,1575-12-16
+85,Borroso Precipicio,1589-06-11
+86,Finito Toro,1922-02-05
+87,Exacto Conjuro,1538-04-19
+88,Templado Enano,1635-01-09
+89,Diverso Luna,1937-09-27
+90,Soleado Avaricia,1552-09-06
+91,Saludable Oasis,1663-01-08
+92,Suave Página,1707-10-27
+93,Personal Moto,1707-05-27
+94,Inseguro Gobierno,1611-05-13
+95,Delicioso Erizo,1755-09-25
+96,Igual Caña,1976-10-02
+97,Flexible Marea,1558-03-12
+98,Amargo Verbena,1637-08-14
+99,Insensible Girasol,1615-05-17
+100,Humilde Zafiro,1791-08-24
+101,Amarillo Edad,1880-03-12
+102,Celoso Esperanza,1652-10-26
+103,Obediente Cinta,1644-10-18
+104,Diferente Trompeta,1694-06-21
+105,Dominante Mezquita,1595-11-25
+106,Sagaz Mitad,1597-10-09
+107,Vítreo Rifle,1719-12-27
+108,Solitario Ángel,1928-12-15
+109,Prudente Pino,1870-01-12
+110,Gigantesco Playa,1871-03-13
+111,Marrón Trozo,1676-10-21
+112,Normal Galeón,1552-06-05
+113,Agrio Velero,1523-03-26
+114,Sabroso Emblema,1958-09-01
+115,Arcaico Final,1706-09-23
+116,Optimista Gozo,1834-02-22
+117,Tacaño Piedra,1800-01-18
+118,Fragante Leche,1646-02-20
+119,Negro Bodega,1942-11-08
+120,Mineral Cuerpo,1938-07-22
+121,Denso Rampa,1743-07-16
+122,Particular Casa,1591-01-18
+123,Genuino Llave,1971-02-12
+124,Ingenuo Expediente,1829-02-16
+125,Injusto Cohete,1675-07-07
+126,Compasivo Bandera,1940-06-08
+127,Sumiso Panorama,1840-01-28
+128,Suelto Término,1801-02-05
+129,Falso Eternidad,1895-01-19
+130,Húmedo Docena,1527-03-16
+131,Nítido Fórmula,1942-02-19
+132,Leñoso Barro,1578-06-05
+133,Costero Maldad,1718-03-20
+134,Temerario Discípulo,1584-09-01
+135,Sucio Pepino,1676-12-25
+136,Delgado Billete,1543-12-19
+137,Taciturno Salón,1722-01-13
+138,Cautivo Tigre,1973-03-14
+139,Caótico Tablero,1881-11-11
+140,Valiente Guarida,1696-05-28
+141,Tenue Heroína,1953-12-26
+142,Intacto Yogur,1917-10-01
+143,Vivo Angustia,1918-03-02
+144,Pétreo Algodón,1531-06-07
+145,Turbio Tractor,1782-07-11
+146,Codicioso Órbita,1965-04-06
+147,Solemne Seda,1629-09-04
+148,Enfermo Muelle,1515-08-06
+149,Autoritario Estuario,1547-12-27
+150,Colectivo Chalé,1594-05-16
+151,Grueso Carta,1875-01-25
+152,Lluvioso Constelación,1839-03-23
+153,Oscuro Espejo,1549-06-05
+154,Rural Grúa,1917-03-21
+155,Salobre Firmamento,1782-05-16
+156,Excelente Pulso,1605-05-19
+157,Vanidoso Amapola,1551-10-18
+158,Ardiente Bazar,1583-02-18
+159,Benigno Buey,1909-11-10
+160,Nervioso Pato,1842-10-24
+161,Curativo Toalla,1537-09-24
+162,Claro Lenguaje,1736-04-12
+163,Fluido Celos,1667-11-09
+164,Insólito Tejón,1776-11-22
+165,Anaranjado Comadreja,1516-05-15
+166,Impuro Helecho,1686-06-06
+167,Maleducado Niño,1808-11-16
+168,Privado Galaxia,1628-02-16
+169,Orgulloso Mango,1954-08-26
+170,Airado Murciélago,1614-11-10
+171,Brillante Debate,1719-05-21
+172,Osado Senado,1664-10-16
+173,Liso Marfil,1935-02-04
+174,Liviano Trato,1562-11-15
+175,Adinerado Aprendiz,1677-07-27
+176,Válido Millar,1912-02-21
+177,Subterráneo Escarcha,1559-06-14
+178,Irritado Fortuna,1564-01-25
+179,Lóbrego Mejilla,1641-10-17
+180,Elegante Sala,1637-07-19
+181,Moderno Compás,1744-02-01
+182,Fragmentado Manía,1969-02-14
+183,Ínfimo Río,1515-09-18
+184,Envidioso Ballesta,1964-06-10
+185,Hostil Escritor,1541-07-01
+186,Preso Begonia,1511-11-16
+187,Áspero Cangrejo,1781-02-14
+188,Teórico Cuervo,1580-02-11
+189,Picante Tambor,1913-04-09
+190,Blando Herrero,1904-01-28
+191,Feo Panadero,1963-08-16
+192,Furioso Corteza,1708-08-22
+193,Arrogante Destello,1733-05-12
+194,Duro Demonio,1733-10-13
+195,Divino Armadura,1561-02-28
+196,Antiguo Ficción,1555-01-16
+197,Simpático Cara,1923-04-26
+198,Miserable Faro,1511-09-13
+199,Indulgente Excavadora,1601-05-28
+200,Desordenado Hámster,1806-02-23
+201,Quebradizo Caramelo,1573-03-19
+202,Meticuloso Túnica,1804-01-25
+203,Rosado Empresa,1885-08-25
+204,Abundante Nervio,1620-07-15
+205,Verde Guerra,1568-02-08
+206,Perfecto Vena,1508-01-27
+207,Profundo Grillo,1699-09-08
+208,Torpe Catalejo,1866-12-22
+209,Superficial Humo,1531-12-26
+210,Mate Amiga,1543-03-08
+211,Similar Objetivo,1866-11-08
+212,Elástico Sol,1798-04-18
+213,Gentil Fuego,1887-06-05
+214,Mediano Fábrica,1554-04-12
+215,Rígido Ropa,1820-08-21
+216,Ambiguo Espejismo,1695-11-17
+217,Burdo Cálculo,1595-03-09
+218,Aromático Novela,1519-03-11
+219,Hermoso Humedad,1748-05-07
+220,Gordo Boceto,1916-07-02
+221,Atado Pimiento,1955-09-13
+222,Bajo Sombra,1794-06-20
+223,Satisfecho Haya,1611-07-22
+224,Espeso Alicate,1800-03-16
+225,Rudo Bizcocho,1885-04-13
+226,Bueno Ribera,1924-02-10
+227,Tormentoso Nieta,1522-08-02
+228,Serio Cuerda,1652-11-01
+229,Opaco Judía,1969-09-18
+230,Corto Cucaracha,1933-02-27
+231,Marchito Garganta,1695-12-27
+232,Nocivo Ballena,1545-02-17
+233,Máximo Ópera,1963-01-05
+234,Vegetal Mancha,1518-03-11
+235,Sensible Rastrillo,1901-07-28
+236,Abstracto Jugo,1865-03-26
+237,Maligno Aguacate,1953-08-09
+238,Misericordioso Tornillo,1932-10-26
+239,Bello Música,1501-08-23
+240,Tolerante Dado,1693-08-22
+241,Cremoso Palmera,1531-04-12
+242,Completo Mirada,1895-03-08
+243,Pesimista Mano,1795-09-04
+244,Blanco Cinturón,1898-12-02
+245,Cobarde Animal,1589-01-14
+246,Gracioso Tragedia,1835-06-09
+247,Sereno Argumento,1521-03-14
+248,Translúcido Nieto,1838-12-14
+249,Común Polilla,1811-07-04
+250,Hábil Clínica,1509-02-16
+251,Colorado Estrategia,1876-07-12
+252,Metálico Calor,1681-12-24
+253,Terrestre Sótano,1953-01-10
+254,Afectuoso Conserva,1840-02-15
+255,Transparente Alumno,1878-02-21
+256,Ancho Almíbar,1622-09-23
+257,Pesado Minotauro,1704-04-05
+258,Distinto Cereal,1741-05-12
+259,Alto Acuerdo,1636-05-11
+260,Gris Chorizo,1954-03-20
+261,Mínimo Pantano,1574-08-18
+262,Contento Rama,1787-01-10
+263,Opuesto Espalda,1800-10-01
+264,Descuidado Ciudadela,1808-10-14
+265,Semejante Altar,1961-05-02
+266,Rocoso Depósito,1955-12-24
+267,Descortés Armario,1864-05-23
+268,Audaz Banda,1648-08-23
+269,Venenoso Músico,1687-04-06
+270,Viejo Pie,1977-02-18
+271,Pequeño Pedazo,1725-12-24
+272,Seguro Circo,1810-07-16
+273,Ácido Enigma,1942-03-03
+274,Defectuoso Ajedrez,1672-08-26
+275,Inquieto Coliseo,1872-10-16
+276,Pusilánime Promesa,1826-07-01
+277,Inválido Despacho,1670-05-13
+278,Resplandeciente Terreno,1756-03-22
+279,Aéreo Cajón,1941-11-28
+280,Correcto Infancia,1897-03-22
+281,Antipático Pizarra,1572-08-21
+282,Gélido Milagro,1703-03-22
+283,Azul Mentón,1804-04-22
+284,Cobrizo Danza,1748-01-21
+285,Necio Nieve,1869-05-22
+286,Educado Volcán,1928-07-23
+287,Resistente Duende,1614-09-21
+288,Colérico Farmacia,1589-08-22
+289,Nuevo Sastre,1581-12-23
+290,Ordenado Orfebre,1525-09-20
+291,Concentrado Fábula,1765-02-28
+292,Mojado Sentimiento,1647-03-28
+293,Sombrío Mástil,1589-05-18
+294,Dorado Pan,1882-01-07
+295,Roto Deseo,1613-11-09
+296,Estricto Colchón,1842-10-23
+297,Extraordinario Pluma,1509-01-09
+298,Apagado Embutido,1590-08-14
+299,Lleno Lengua,1513-12-28
+300,Terso Sofá,1962-04-07
+301,Ligado Brigada,1952-07-17
+302,Juguetón Chorro,1535-12-27
+303,Tórrido Guiño,1861-06-06
+304,Nublado Planta,1867-09-06
+305,Pobre Juguete,1594-06-19
+306,Generoso Presión,1743-12-23
+307,Junto Caja,1714-06-05
+308,Fluvial Augurio,1513-01-20
+309,Dubitativo Universo,1691-05-15
+310,Frágil Hora,1731-04-07
+311,Piadoso Escalera,1503-03-03
+312,Soñador Mosca,1680-11-14
+313,Paciente Nido,1810-02-25
+314,Celeste Pelícano,1680-12-09
+315,Soso Pupitre,1785-04-10
+316,Público Agua,1562-12-05
+317,Auténtico Aeropuerto,1900-07-01
+318,Manifiesto Garza,1591-07-23
+319,Raro Juventud,1533-11-16
+320,Diáfano Lágrima,1924-09-17
+321,Humano Juramento,1704-04-06
+322,Amable Idea,1956-10-14
+323,Triste Estornudo,1539-10-17
+324,Único Ocaso,1596-11-23
+325,Enojado Impacto,1947-01-14
+326,Presuntuoso Pingüino,1916-06-22
+327,Informal Columpio,1682-04-11
+328,Soberbio Estepa,1675-08-22
+329,Reciente Frío,1610-10-20
+330,Ventoso Muralla,1646-04-27
+331,Dichoso Imán,1941-10-14
+332,Brumoso Eje,1631-12-20
+333,Peor Pastel,1557-08-14
+334,Poroso Templo,1904-01-05
+335,Extraño Vicio,1765-08-19
+336,Disperso Instante,1608-04-13
+337,Rugoso Camarón,1644-03-14
+338,Campestre Pantalón,1870-07-12
+339,Cálido Té,1609-01-18
+340,Separado Bendición,1705-09-27
+341,Imprudente Paz,1872-10-15
+342,Fétido Granja,1814-04-03
+343,Luminoso Sal,1646-08-04
+344,Melancólico Pechuga,1886-09-23
+345,Unido Brindis,1634-07-07
+346,Deslumbrante Lujuria,1597-10-01
+347,Escaso Pólvora,1546-01-16
+348,Futuro Vid,1626-01-03
+349,Líquido Queso,1719-02-08
+350,Preciso Velorio,1535-01-25
+351,Montañoso Sabio,1535-09-26
+352,Alterado Ojo,1767-01-08
+353,Democrático Concierto,1813-11-10
+354,Mayor Desgracia,1769-12-17
+355,Impaciente Percepción,1655-06-13
+356,Cariñoso Sardina,1832-06-28
+357,Vago Col,1591-01-07
+358,Cruel Tenaza,1788-04-21
+359,Eterno Planicie,1684-07-22
+360,Rencoroso Peldaño,1698-03-04
+361,Polvoriento Dicha,1904-03-18
+362,Plateado Grieta,1610-09-02
+363,Minúsculo Escultura,1916-09-14
+364,Mejor Atardecer,1956-07-26
+365,Singular Madriguera,1824-07-03
+366,Inmenso Halcón,1959-12-15
+367,Largo Párrafo,1812-10-19
+368,Urbano Cornisa,1641-11-01
+369,Robusto Laguna,1808-06-11
+370,Dueño,1600-03-16
+371,Dominó,1738-03-20
+372,Hielo,1600-09-20
+373,Fragmento,1976-02-22
+374,Victoria,1691-10-22
+375,Camaleón,1736-03-14
+376,Chocolate,1660-12-23
+377,Señor,1804-06-16
+378,Trompo,1628-10-13
+379,Violín,1730-07-10
+380,Gorra,1785-08-08
+381,Cabeza,1835-08-16
+382,Acta,1940-06-09
+383,Alero,1602-06-23
+384,Epílogo,1688-12-24
+385,Cuadro,1855-04-27
+386,Red,1928-10-18
+387,Presa,1762-04-16
+388,Tintero,1771-07-21
+389,Lechuza,1974-03-14
+390,Lava,1630-09-05
+391,Habitación,1666-05-15
+392,Bruma,1745-09-05
+393,Eclipse,1604-07-23
+394,Cintura,1577-02-13
+395,Contrato,1971-03-13
+396,Mar,1848-07-15
+397,Ventana,1736-08-21
+398,Puñal,1838-01-08
+399,Anciano,1841-02-03
+400,Almeja,1886-12-07
+401,Hija,1902-12-21
+402,Zorro,1809-01-16
+403,Pánico,1664-03-16
+404,Luciérnaga,1869-09-07
+405,Profundidad,1910-05-06
+406,Tapiz,1541-08-10
+407,Odre,1635-04-20
+408,Instinto,1964-10-04
+409,Hipopótamo,1705-08-10
+410,Búfalo,1606-10-16
+411,Librería,1541-05-19
+412,Portón,1770-04-06
+413,Techo,1847-05-06
+414,Diosa,1930-05-09
+415,Rayo,1961-09-26
+416,Escalón,1749-11-19
+417,Columna,1546-08-16
+418,Ladrón,1860-07-19
+419,Tobogán,1753-11-05
+420,Sapo,1787-03-12
+421,Función,1605-02-12
+422,Dinero,1973-09-08
+423,Programa,1780-04-02
+424,Cebada,1502-05-07
+425,Vía,1565-05-25
+426,Guardia,1690-01-02
+427,Gallina,1608-11-23
+428,Botón,1829-02-05
+429,Canoa,1509-05-25
+430,Sobre,1969-01-13
+431,Violeta,1508-02-04
+432,Queja,1882-09-08
+433,Curandero,1920-12-02
+434,Prima,1813-12-16
+435,Barco,1789-02-08
+436,Lancha,1644-08-04
+437,Loro,1879-02-25
+438,Gramo,1552-05-09
+439,Guisante,1792-07-28
+440,Caballete,1619-12-10
+441,Cántaro,1679-08-08
+442,Festejo,1792-12-07
+443,Potro,1562-05-20
+444,Cobardía,1797-07-01
+445,Libro,1506-07-28
+446,Siglo,1613-01-01
+447,Farol,1942-09-21
+448,Andamio,1862-03-26
+449,Tormenta,1782-11-22
+450,Ladera,1889-03-05
+451,Cesta,1627-08-01
+452,Peregrino,1835-04-10
+453,Termita,1644-12-03
+454,Esfera,1509-03-08
+455,Miedo,1705-03-18
+456,Musgo,1901-02-23
+457,Dedal,1662-05-13
+458,Ansia,1963-04-07
+459,Alpaca,1798-08-12
+460,Himno,1669-01-03
+461,Hermano,1732-04-05
+462,Triángulo,1772-05-26
+463,Manuscrito,1509-04-09
+464,Explorador,1808-12-03
+465,Naipe,1947-11-16
+466,Cantera,1717-04-01
+467,Cascada,1642-10-23
+468,Obra,1961-06-23
+469,Manto,1833-04-09
+470,Orangután,1868-01-19
+471,Lagartija,1937-12-28
+472,Perspectiva,1511-07-24
+473,Vacío,1556-11-23
+474,Cocodrilo,1842-10-22
+475,Centeno,1739-09-13
+476,Flauta,1674-01-13
+477,Táctica,1833-03-09
+478,Mito,1693-01-08
+479,Balaustrada,1628-07-24
+480,Perdón,1663-11-02
+481,Delta,1789-04-07
+482,Brisa,1808-09-28
+483,Corredor,1554-11-11
+484,Iceberg,1835-05-14
+485,Acero,1596-07-27
+486,Mercader,1517-06-22
+487,Zapato,1682-04-08
+488,Broche,1915-01-26
+489,Empleado,1673-07-26
+490,Señal,1838-10-01
+491,Túnel,1503-10-28
+492,Clavo,1868-02-16
+493,Cúpula,1759-11-27
+494,Fregona,1715-03-04
+495,Archivo,1533-12-24
+496,Fogón,1899-03-14
+497,Piña,1659-03-02
+498,Capitán,1532-12-16
+499,Arteria,1876-09-06
+500,Gruta,1658-04-07
+501,Estómago,1544-05-05
+502,Hacienda,1668-09-16
+503,Anfiteatro,1728-06-14
+504,Folio,1681-06-17
+505,Soga,1892-12-03
+506,Plata,1568-10-03
+507,Sílaba,1537-07-09
+508,Regimiento,1702-05-15
+509,Licor,1955-12-23
+510,Escorpión,1715-12-11
+511,Boca,1682-03-17
+512,Mosquito,1855-05-24
+513,Fuerza,1970-09-09
+514,Pigmento,1631-05-22
+515,Marcha,1980-12-21
+516,Milenio,1721-04-01
+517,Eco,1720-08-27
+518,Verdad,1550-04-21
+519,Apellido,1941-09-02
+520,Tritón,1799-05-22
+521,Fiesta,1855-01-13
+522,Catapulta,1548-12-09
+523,Codicia,1513-01-17
+524,Leopardo,1617-02-03
+525,Cuaderno,1870-10-05
+526,Intuición,1759-06-12
+527,Profecía,1881-06-20
+528,Autopista,1879-12-10
+529,Entierro,1704-04-27
+530,Torreón,1898-10-20
+531,Ninfa,1885-05-09
+532,Azucena,1767-07-10
+533,Gota,1650-11-27
+534,Silo,1714-06-05
+535,Bolígrafo,1717-03-14
+536,Noble,1920-05-13
+537,Tratado,1775-05-08
+538,Naranjo,1796-10-26
+539,Choza,1529-12-02
+540,Cumbre,1552-09-21
+541,Piel,1659-03-08
+542,Canal,1928-06-23
+543,Reina,1863-03-08
+544,Rinoceronte,1908-03-15
+545,Acuarela,1723-05-02
+546,Fragor,1748-05-22
+547,Raya,1916-07-27
+548,Muñeca,1744-04-13
+549,Emporio,1708-03-15
+550,Relámpago,1692-06-17
+551,Voz,1638-03-07
+552,Canica,1612-02-07
+553,Papiro,1940-07-22
+554,Gloria,1822-02-04
+555,Sociedad,1586-09-05
+556,Esponja,1850-02-14
+557,Bigote,1915-07-18
+558,Romería,1625-03-04
+559,Ofrenda,1876-10-27
+560,Párpado,1891-06-08
+561,Sirena,1634-05-21
+562,Ambiente,1829-07-01
+563,Magia,1645-03-07
+564,Tregua,1893-08-22
+565,Campesino,1503-03-13
+566,Rollo,1893-04-15
+567,Procesión,1640-09-01
+568,Palma,1520-07-27
+569,Palanca,1967-01-27
+570,Muchacha,1545-06-09
+571,Abeto,1640-02-03
+572,Dibujo,1746-05-22
+573,Permiso,1693-06-05
+574,Albergue,1562-06-26
+575,Tinta,1621-01-27
+576,Científico,1903-04-02
+577,Enciclopedia,1833-12-14
+578,Ritmo,1697-07-22
+579,Bloc,1608-03-23
+580,Calle,1869-09-15
+581,Semana,1528-03-22
+582,Oreja,1950-07-14
+583,Estuche,1822-06-23
+584,Ascensor,1822-05-24
+585,Triunfo,1677-02-08
+586,Sábana,1552-10-14
+587,Emperador,1502-02-22
+588,Vecino,1940-05-14
+589,Instrumento,1884-11-17
+590,Cremallera,1668-04-05
+591,Roca,1953-08-22
+592,Rúbrica,1803-01-07
+593,Herramienta,1567-04-15
+594,Brujo,1715-03-22
+595,Bordado,1616-01-16
+596,Alfiler,1817-01-11
+597,Antílope,1728-02-13
+598,Costumbre,1659-10-17
+599,Gesto,1865-02-23
+600,Perro,1642-02-19
+601,Mantequilla,1939-04-06
+602,Dromedario,1812-09-22
+603,Esclavitud,1524-09-03
+604,Respuesta,1528-12-14
+605,Mirador,1966-07-28
+606,Duda,1505-09-11
+607,Marca,1948-02-24
+608,Sangre,1607-11-05
+609,Comerciante,1841-08-25
+610,Vestido,1596-11-26
+611,Edicto,1698-11-06
+612,Escenario,1919-07-24
+613,Aro,1765-08-09
+614,Puño,1871-08-09
+615,Filete,1628-05-05
+616,Lomo,1967-05-06
+617,Acertijo,1795-09-14
+618,Mujer,1707-05-28
+619,Secreto,1888-09-13
+620,Memoria,1518-12-04
+621,Abrecartas,1935-11-25
+622,Niñez,1580-08-04
+623,Café,1641-02-01
+624,Niña,1557-06-03
+625,Salamandra,1537-02-15
+626,Barómetro,1756-12-13
+627,Glaciar,1510-09-08
+628,Jabón,1821-08-04
+629,Letra,1718-12-14
+630,Aparato,1587-01-24
+631,Espíritu,1692-07-19
+632,Atún,1587-11-22
+633,Comedor,1710-02-22
+634,Apartamento,1511-09-08
+635,Década,1587-06-09
+636,Invierno,1688-05-06
+637,Carreta,1724-04-21
+638,Estruendo,1973-01-06
+639,Número,1915-03-08
+640,Abismo,1859-09-19
+641,Destino,1810-02-01
+642,Níspero,1586-09-27
+643,Franja,1704-11-09
+644,Barril,1871-02-24
+645,Hijo,1832-12-02
+646,Discurso,1974-06-03
+647,Tradición,1898-01-18
+648,Hélice,1632-09-23
+649,Divorcio,1552-05-14
+650,Elefante,1718-04-18
+651,Ciclón,1737-09-11
+652,Sacerdote,1549-05-16
+653,Copa,1611-01-22
+654,Sobrina,1666-12-13
+655,Arándano,1937-09-06
+656,Postre,1923-04-01
+657,Médico,1566-11-22
+658,Sacrificio,1582-12-19
+659,Fresa,1518-05-12
+660,Peine,1617-01-09
+661,Sierra,1717-12-17
+662,Llama,1820-04-12
+663,Navegante,1724-08-18
+664,Maestro,1739-10-14
+665,Extracto,1652-06-03
+666,Hoja,1581-05-01
+667,Cereza,1791-03-04
+668,Flota,1727-04-13
+669,Tonel,1920-04-22
+670,Princesa,1855-01-01
+671,Blusa,1578-12-27
+672,Saco,1727-11-28
+673,Recipiente,1923-03-12
+674,Albañil,1874-05-20
+675,Museo,1693-08-04
+676,Diario,1629-11-13
+677,Carro,1766-11-01
+678,Nota,1682-08-24
+679,Traje,1587-12-19
+680,Semilla,1566-10-27
+681,Rival,1803-09-15
+682,Unicornio,1792-05-22
+683,Reloj,1764-11-17
+684,Foso,1548-04-04
+685,Posada,1791-10-23
+686,Energía,1700-01-19
+687,Pared,1653-08-14
+688,Amo,1662-03-06
+689,Fama,1502-10-10
+690,Acantilado,1543-04-26
+691,Pistola,1663-09-13
+692,Respiro,1719-02-20
+693,Titiritero,1587-10-09
+694,Melón,1669-09-01
+695,Media,1906-06-17
+696,Ilusión,1925-10-23
+697,Gorila,1512-10-26
+698,Maldición,1969-10-06
+699,Lagarto,1736-04-16
+700,Clamor,1658-08-16
+701,Galardón,1701-06-16
+702,Huella,1823-10-16
+703,Camión,1821-02-20
+704,Abuelo,1563-03-08
+705,Afecto,1679-12-25
+706,Espinaca,1719-06-21
+707,Hiedra,1794-02-01
+708,Portalápices,1760-01-15
+709,Sequía,1505-05-26
+710,Madre,1626-12-24
+711,Efecto,1568-11-06
+712,Superficie,1862-12-08
+713,Viento,1720-03-20
+714,Destornillador,1517-03-18
+715,Candelabro,1560-11-15
+716,Arcón,1803-08-24
+717,Nave,1646-01-23
+718,Anillo,1889-09-14
+719,Luz,1758-11-12
+720,León,1512-08-12
+721,Amanecer,1798-05-06
+722,Embalse,1900-12-11
+723,Castillo,1540-08-01
+724,Mes,1800-12-09
+725,Padre,1521-07-26
+726,Cebra,1687-05-05
+727,Chaleco,1978-05-22
+728,Esencia,1534-12-26
+729,Vergel,1523-04-04
+730,Día,1840-03-02
+731,Suelo,1915-06-15
+732,Olvido,1640-05-23
+733,Invernadero,1709-04-26
+734,Fantasma,1572-07-28
+735,Abrigo,1895-09-02
+736,Óleo,1732-10-04
+737,Periódico,1778-02-13
+738,Patio,1609-01-08
+739,Hermana,1806-07-13
+740,Pétalo,1624-10-19
+741,Egoísmo,1616-05-12
+742,Libertad,1967-10-16
+743,Fe,1889-10-05
+744,Cilindro,1545-12-04
+745,Pilar,1626-11-24
+746,Guitarra,1873-03-08
+747,Mago,1928-07-16
+748,Tomate,1980-02-02
+749,Batallón,1787-08-12
+750,Pavo,1610-08-25
+751,Ciruela,1674-03-15
+752,Hada,1619-11-05
+753,Melodía,1779-11-26
+754,Escritorio,1725-09-01
+755,Príncipe,1970-06-06
+756,Cocinero,1662-12-06
+757,Montaña,1715-11-09
+758,Mochila,1579-05-07
+759,Puerta,1542-03-07
+760,Crónica,1661-05-04
+761,Castaña,1580-07-03
+762,Cartulina,1641-09-22
+763,Basílica,1794-01-27
+764,Documento,1818-03-12
+765,Cisne,1674-06-25
+766,Lenteja,1766-01-19
+767,Pulsera,1920-04-19
+768,Meteoro,1602-10-23
+769,Lluvia,1772-03-23
+770,Libreta,1640-02-19
+771,Dragón,1944-03-14
+772,Serpiente,1882-04-03
+773,Risa,1941-09-22
+774,Guadaña,1700-09-27
+775,Costa,1619-10-19
+776,Catedral,1935-10-27
+777,Hogar,1656-07-07
+778,Pera,1788-06-04
+779,Oro,1717-12-23
+780,Bomba,1644-09-15
+781,Viga,1964-04-24
+782,Monasterio,1630-09-27
+783,Dedo,1943-07-04
+784,Zanahoria,1884-08-10
+785,Albaricoque,1929-06-15
+786,Pelo,1847-12-28
+787,Regla,1563-08-12
+788,Baúl,1915-12-18
+789,Gacela,1712-04-22
+790,Peñasco,1672-05-10
+791,Músculo,1642-08-27
+792,Taza,1605-06-12
+793,Higo,1546-12-02
+794,Corbata,1843-12-07
+795,Cartón,1897-07-26
+796,Personaje,1927-09-01
+797,Consejo,1781-09-28
+798,Estante,1885-03-02
+799,Cabo,1566-02-10
+800,Sombrero,1608-10-12
+801,Milicia,1579-07-07
+802,Noria,1870-07-01
+803,Mortero,1680-09-01
+804,Brújula,1560-08-28
+805,Partitura,1957-06-19
+806,Horno,1576-01-13
+807,Monja,1851-07-18
+808,Gallo,1875-10-18
+809,Saltamontes,1673-06-13
+810,Orquídea,1929-01-10
+811,Cementerio,1526-11-05
+812,Pergamino,1804-07-12
+813,Camello,1504-01-01
+814,Cofre,1922-07-01
+815,Lupa,1980-06-03
+816,Astilla,1500-11-21
+817,Valla,1686-12-02
+818,Vaso,1936-06-08
+819,Maleta,1882-05-23
+820,Cólera,1794-05-01
+821,Avestruz,1772-06-17
+822,Aire,1815-01-22
+823,Vista,1904-04-25
+824,Momento,1623-02-28
+825,Motivo,1702-11-02
+826,Chimpancé,1780-10-09
+827,Uña,1744-05-19
+828,Antojo,1837-07-03
+829,Abeja,1636-02-11
+830,Acueducto,1917-11-05
+831,Verso,1804-05-19
+832,Valle,1506-04-01
+833,Arena,1712-05-11
+834,Lanza,1669-02-15
+835,Juez,1923-02-24
+836,Litro,1539-06-19
+837,Diccionario,1614-03-17
+838,Titán,1726-02-02
+839,Pradera,1675-11-28
+840,Impulso,1735-05-26
+841,Calamar,1680-12-14
+842,Rata,1839-08-22
+843,Trucha,1662-05-16
+844,Rugido,1505-02-13
+845,Ruta,1946-02-06
+846,Símbolo,1554-10-11
+847,Vigilante,1631-03-19
+848,Pintura,1851-08-18
+849,Mesón,1769-02-09
+850,Escudo,1784-08-13
+851,Rodilla,1523-12-28
+852,Venganza,1724-12-06
+853,Tallo,1523-03-15
+854,Viajero,1537-09-03
+855,Lápida,1551-03-02
+856,Amor,1580-07-27
+857,Fénix,1910-04-02
+858,Prosa,1791-03-05
+859,Minuto,1626-08-10
+860,Avena,1912-02-13
+861,Carpeta,1719-09-22
+862,Sacapuntas,1543-12-06
+863,Bebé,1724-06-06
+864,Comprador,1505-01-19
+865,Asteroide,1916-03-13
+866,Poeta,1778-08-12
+867,Sabana,1765-05-18
+868,Aparcamiento,1667-09-12
+869,Jaguar,1695-06-21
+870,Cuchara,1884-03-10
+871,Niebla,1906-03-01
+872,Espacio,1521-08-28
+873,Ámbar,1656-01-08
+874,Aurora,1924-09-03
+875,Insignia,1869-11-06
+876,Rostro,1688-09-01
+877,Lienzo,1843-09-01
+878,Lodo,1951-04-22
+879,Jazmín,1906-02-01
+880,Vector,1672-09-15
+881,Escuadra,1718-09-08
+882,Lamento,1908-02-25
+883,Urraca,1798-10-17
+884,Jardín,1721-04-17
+885,Lápiz,1565-09-20
+886,Caqui,1757-07-26
+887,Cultura,1601-01-20
+888,Pantorrilla,1843-02-15
+889,Frase,1648-11-25
+890,Hombre,1632-03-15
+891,Pulpo,1974-12-10
+892,Taladro,1860-06-01
+893,Langosta,1896-12-19
+894,Iglesia,1651-10-26
+895,Lazo,1715-04-13
+896,Establo,1699-10-18
+897,Granizo,1528-04-15
+898,Chirimoya,1555-02-19
+899,Nectarina,1890-09-17
+900,Cadera,1855-07-08
+901,Ovillo,1974-05-18
+902,Higuera,1528-06-09
+903,Carretera,1630-05-07
+904,Misterio,1818-09-19
+905,Arroz,1603-11-07
+906,Escoba,1879-04-24
+907,Bóveda,1542-11-03
+908,Medusa,1621-03-25
+909,Pandereta,1973-11-23
+910,Cuento,1821-12-20
+911,Desván,1714-02-11
+912,Espada,1702-04-13
+913,Ala,1641-05-22
+914,Melancolía,1568-02-12
+915,Lago,1688-05-17
+916,Saber,1917-11-07
+917,Electricidad,1704-01-14
+918,Porcelana,1861-08-19
+919,Latido,1574-09-04
+920,Kilo,1851-01-17
+921,Culebra,1725-08-13
+922,Cuero,1765-03-18
+923,Escultor,1635-10-16
+924,Hierba,1890-06-25
+925,Aguja,1525-12-21
+926,Clavel,1830-11-23
+927,Paisaje,1641-02-28
+928,Bosque,1774-03-26
+929,Pimienta,1603-09-13
+930,Libélula,1852-04-17
+931,Raqueta,1645-07-09
+932,Ciénaga,1584-09-16
+933,Caverna,1964-11-06
+934,Oración,1967-08-03
+935,Indicio,1826-08-15
+936,Granada,1788-09-20
+937,Migaja,1931-06-25
+938,Iguana,1646-06-27
+939,Presagio,1803-11-11
+940,Cómoda,1758-05-15
+941,Taller,1591-07-15
+942,Identidad,1969-07-27
+943,Corriente,1770-11-08
+944,Gula,1599-09-01
+945,Cliente,1808-04-15
+946,Águila,1916-11-18
+947,Penumbra,1683-08-28
+948,Quilla,1852-11-23
+949,Profesor,1846-12-04
+950,Compañero,1670-07-22
+951,Estrella,1587-06-15
+952,Armada,1816-10-02
+953,Policía,1776-09-03
+954,Cicatriz,1789-01-24
+955,Helicóptero,1706-09-21
+956,Yegua,1910-08-04
+957,Fortaleza,1705-10-01
+958,Martillo,1852-02-21
+959,Campo,1752-06-21
+960,Cabaña,1852-04-15
+961,Cañón,1884-03-10
+962,Violonchelo,1739-01-09
+963,Monumento,1749-12-16
+964,Línea,1738-04-06
+965,Era,1752-10-17
+966,Oráculo,1584-04-04
+967,Emoción,1525-11-10
+968,Combate,1507-12-22
+969,Fruto,1870-06-08
+970,Máquina,1875-02-10
+971,Monje,1654-11-13
+972,Tijeras,1784-10-24
+973,Teoría,1735-12-19
+974,Cuadra,1716-05-20
+975,Encaje,1773-12-14
+976,Piscina,1893-03-11
+977,Araña,1568-05-05
+978,Acuario,1775-09-11
+979,Risco,1585-10-08
+980,Teatro,1765-09-17
+981,Remo,1511-09-24
+982,Guerrero,1605-03-13
+983,Color,1855-12-28
+984,Tempestad,1859-09-11
+985,Nostalgia,1728-08-15
+986,Poema,1814-06-28
+987,Esquina,1647-12-07
+988,Torre,1930-08-22
+989,Piedad,1582-09-05
+990,Regadera,1528-05-01
+991,Tucán,1764-12-06
+992,Herencia,1543-06-17
+993,Lima,1898-05-22
+994,Imaginación,1512-01-08
+995,Grifo,1691-05-19
+996,Cifra,1874-02-03
+997,Aceite,1913-07-10
+998,Capa,1637-03-22
+999,Puente,1661-02-03
+1000,Altura,1532-01-12
+1001,Cien años de soledad,1850-10-03
+1002,Don Quijote de la Mancha,1573-12-23
+1003,La casa de los espíritus,1565-11-24
+1004,El amor en los tiempos del cólera,1774-06-14
+1005,Rayuela,1588-06-05
+1006,La sombra del viento,1637-11-10
+1007,Ficciones,1880-04-24
+1008,El túnel,1769-04-13
+1009,Pedro Páramo,1591-03-02
+1010,La ciudad y los perros,1899-08-28
+1011,Crónica de una muerte anunciada,1623-02-27
+1012,Los ríos profundos,1635-02-03
+1013,La tregua,1765-06-10
+1014,El otoño del patriarca,1668-02-14
+1015,Doña Bárbara,1700-01-03
+1016,Martín Fierro,1636-08-17
+1017,La Regenta,1771-08-30
+1018,Fortunata y Jacinta,1518-07-18
+1019,Niebla,1927-06-04
+1020,"San Manuel Bueno, mártir",1803-01-11
+1021,La colmena,1708-09-02
+1022,Tiempo de silencio,1579-11-26
+1023,Luces de bohemia,1547-04-24
+1024,La familia de Pascual Duarte,1870-03-16
+1025,Nada,1928-06-30
+1026,El camino,1783-06-26
+1027,Réquiem por un campesino español,1523-03-07
+1028,La verdad sobre el caso Savolta,1873-05-10
+1029,El Jarama,1577-07-29
+1030,Volverás a Región,1975-10-06
+1031,Si te dicen que caí,1863-08-11
+1032,La saga/fuga de J.B.,1771-02-12
+1033,El hereje,1597-11-06
+1034,La carta esférica,1521-10-17
+1035,El corazón helado,1661-10-20
+1036,Los mares del Sur,1806-02-28
+1037,La sombra del águila,1931-01-22
+1038,El capitán Alatriste,1502-01-29
+1039,La tabla de Flandes,1781-04-02
+1040,El club Dumas,1922-09-21
+1041,La fiesta del chivo,1892-11-20
+1042,Travesuras de la niña mala,1701-11-25
+1043,Pantaleón y las visitadoras,1578-04-15
+1044,Conversación en La Catedral,1513-10-30
+1045,Como agua para chocolate,1526-10-13
+1046,El laberinto de la soledad,1910-05-13
+1047,La muerte de Artemio Cruz,1828-11-21
+1048,Aura,1560-06-20
+1049,Bestiario,1631-03-25
+1050,La invención de Morel,1905-07-11
+1051,El Aleph,1652-01-16
+1052,El informe de Brodie,1840-04-11
+1053,Sobre héroes y tumbas,1575-06-01
+1054,La traición de Rita Hayworth,1523-05-13
+1055,Pride and Prejudice,1817-05-24
+1056,Sense and Sensibility,1770-11-08
+1057,Emma,1526-09-01
+1058,Persuasion,1720-09-10
+1059,Mansfield Park,1870-12-15
+1060,Northanger Abbey,1829-12-11
+1061,Moby Dick,1614-09-07
+1062,The Great Gatsby,1506-12-17
+1063,Nineteen Eighty-Four,1691-09-16
+1064,To Kill a Mockingbird,1640-05-27
+1065,The Catcher in the Rye,1536-01-18
+1066,Ulysses,1877-01-15
+1067,Mrs Dalloway,1537-03-31
+1068,To the Lighthouse,1743-08-25
+1069,Brave New World,1506-04-27
+1070,Jane Eyre,1918-11-07
+1071,Wuthering Heights,1730-07-27
+1072,The Sound and the Fury,1769-08-01
+1073,Beloved,1762-04-15
+1074,The Old Man and the Sea,1504-09-13
+1075,Middlemarch,1935-02-21
+1076,Great Expectations,1506-10-09
+1077,David Copperfield,1501-08-13
+1078,A Tale of Two Cities,1533-06-25
+1079,Oliver Twist,1843-06-05
+1080,Heart of Darkness,1518-02-18
+1081,Lord Jim,1979-08-06
+1082,On the Road,1987-09-17
+1083,The Grapes of Wrath,1742-02-15
+1084,East of Eden,1697-01-17
+1085,Of Mice and Men,1823-09-20
+1086,Invisible Man,1523-05-03
+1087,Lolita,1695-09-13
+1088,Slaughterhouse-Five,1574-06-27
+1089,Catch-22,1729-05-26
+1090,The Hobbit,1915-12-14
+1091,The Lord of the Rings,1779-06-29
+1092,Animal Farm,1710-05-14
+1093,The Chronicles of Narnia,1656-02-13
+1094,Fahrenheit 451,1976-04-23
+1095,The Martian Chronicles,1808-01-15
+1096,Dune,1885-12-05
+1097,Neuromancer,1510-03-12
+1098,Do Androids Dream of Electric Sheep,1962-11-19
+1099,Foundation,2002-10-12
+1100,I Robot,1674-09-26
+1101,The Left Hand of Darkness,1873-02-12
+1102,A Wizard of Earthsea,1585-03-29
+1103,The Name of the Wind,1554-02-24
+1104,The Road,1737-05-18
+1105,Blood Meridian,1674-12-15
+1106,No Country for Old Men,1907-06-17
+1107,The Sun Also Rises,1577-12-27
+1108,For Whom the Bell Tolls,1570-09-18
+1109,A Farewell to Arms,1613-03-22
+1110,As I Lay Dying,1810-08-16
+1111,Light in August,1769-03-28
+1112,"Absalom, Absalom!",2018-03-09
+1113,"Go Down, Moses",1902-04-08
+1114,Their Eyes Were Watching God,1852-10-27
+1115,The Color Purple,1875-05-07
+1116,Things Fall Apart,1651-12-22
+1117,The Bluest Eye,1789-10-30
+1118,Song of Solomon,2019-08-29
+1119,Les Misérables,1841-09-08
+1120,Le Petit Prince,1512-09-18
+1121,Madame Bovary,1681-05-03
+1122,À la recherche du temps perdu,1987-10-04
+1123,L'Étranger,1514-04-02
+1124,Les Fleurs du mal,1615-05-14
+1125,Le Comte de Monte-Cristo,1639-05-11
+1126,Notre-Dame de Paris,1520-03-15
+1127,Germinal,1613-06-19
+1128,La Peste,1810-12-24
+1129,Candide,1721-08-30
+1130,Bel-Ami,1549-03-18
+1131,Le Rouge et le Noir,2021-07-30
+1132,Voyage au bout de la nuit,1563-09-25
+1133,L'Éducation sentimentale,1555-09-13
+1134,Les Trois Mousquetaires,1668-09-07
+1135,Le Père Goriot,1670-01-05
+1136,La Nausée,1894-05-09
+1137,Bonjour tristesse,1933-07-24
+1138,Vingt mille lieues sous les mers,1504-09-30
+1139,Les Contemplations,1522-02-04
+1140,Le Misanthrope,1941-04-05
+1141,L'Avare,1970-05-06
+1142,Le Cid,1624-12-27
+1143,Phèdre,1986-04-07
+1144,Les Liaisons dangereuses,1943-10-11
+1145,Le Horla,1646-09-16
+1146,Une vie,1786-04-21
+1147,Pierre et Jean,1833-02-06
+1148,Thérèse Raquin,1828-04-19
+1149,Nana,1600-12-17
+1150,L'Assommoir,1656-01-23
+1151,Au bonheur des dames,1596-02-06
+1152,Le Ventre de Paris,1515-07-14
+1153,La Bête humaine,1621-03-12
+1154,Cyrano de Bergerac,1990-01-25
+1155,L'Écume des jours,2018-05-26
+1156,Moderato cantabile,1910-05-12
+1157,Hiroshima mon amour,1570-12-28
+1158,La Condition humaine,1963-10-13
+1159,Faust,1598-01-08
+1160,Die Verwandlung,1654-10-02
+1161,Der Prozess,1793-12-28
+1162,Das Schloss,1792-01-04
+1163,Buddenbrooks,1874-01-19
+1164,Der Zauberberg,1564-01-05
+1165,Die Blechtrommel,1814-01-16
+1166,Im Westen nichts Neues,1705-07-05
+1167,Effi Briest,1962-06-27
+1168,Der Steppenwolf,1733-07-31
+1169,Siddhartha,1682-10-21
+1170,Die Leiden des jungen Werthers,2005-12-29
+1171,Nathan der Weise,1743-06-01
+1172,Berlin Alexanderplatz,1785-01-30
+1173,Das Parfum,1997-07-25
+1174,Der Vorleser,1925-06-05
+1175,Momo,1567-05-16
+1176,Die unendliche Geschichte,1556-05-08
+1177,Der Name der Rose,1501-06-30
+1178,Homo Faber,1595-06-22
+1179,Der Schimmelreiter,1993-08-28
+1180,Bahnwärter Thiel,1878-01-19
+1181,Der Tod in Venedig,1712-02-07
+1182,Tonio Kröger,1810-03-03
+1183,Die Räuber,1710-01-06
+1184,Wilhelm Tell,1565-08-07
+1185,Emilia Galotti,1978-02-10
+1186,Der Besuch der alten Dame,2006-01-17
+1187,Die Weber,1967-07-15
+1188,Michael Kohlhaas,1590-08-19
+1189,La Divina Commedia,1675-04-15
+1190,Il Decameron,1784-08-27
+1191,I Promessi Sposi,1823-05-14
+1192,Il nome della rosa,1994-10-11
+1193,Se una notte d'inverno un viaggiatore,1931-09-23
+1194,Il Gattopardo,1892-05-04
+1195,La coscienza di Zeno,1647-04-08
+1196,Le città invisibili,1678-05-02
+1197,Il fu Mattia Pascal,1775-12-08
+1198,Pinocchio,1922-04-03
+1199,La luna e i falò,1629-09-24
+1200,Una vita violenta,1966-03-14
+1201,Lessico famigliare,1848-10-26
+1202,Il deserto dei Tartari,1599-07-09
+1203,Il barone rampante,1645-06-28
+1204,Il visconte dimezzato,1619-12-20
+1205,Il cavaliere inesistente,1937-08-25
+1206,Marcovaldo,1836-01-06
+1207,Le cosmicomiche,1542-12-19
+1208,Gli indifferenti,1720-10-07
+1209,La ciociara,1922-09-13
+1210,Il giardino dei Finzi-Contini,1962-01-18
+1211,Fontamara,1908-11-13
+1212,Cristo si è fermato a Eboli,2000-07-07
+1213,Il partigiano Johnny,1995-02-15
+1214,Os Lusíadas,1744-12-20
+1215,Dom Casmurro,1967-08-26
+1216,Memórias Póstumas de Brás Cubas,2008-10-28
+1217,O Cortiço,1581-12-30
+1218,Grande Sertão: Veredas,1808-06-15
+1219,A Hora da Estrela,1610-11-25
+1220,A Cidade e as Serras,1832-12-29
+1221,O Primo Basílio,1762-12-21
+1222,Sagarana,1871-11-08
+1223,Vidas Secas,1558-04-17
+1224,Capitães da Areia,1923-02-25
+1225,Quincas Borba,1682-08-18
+1226,A Moreninha,1773-08-20
+1227,Iracema,1878-05-11
+1228,O Ateneu,1605-03-23
+1229,O Guarani,1778-02-27
+1230,O Uraguai,1914-01-13
+1231,A Escrava Isaura,1805-05-31
+1232,Os Maias,1604-03-28
+1233,O Crime do Padre Amaro,1990-09-28
+1234,Crimen y castigo,1527-06-17
+1235,Guerra y paz,1529-03-27
+1236,Ana Karenina,1612-07-31
+1237,Los hermanos Karamázov,1664-09-03
+1238,Padres e hijos,1590-01-18
+1239,El maestro y Margarita,1652-12-12
+1240,Almas muertas,1642-02-04
+1241,Un héroe de nuestro tiempo,1963-01-31
+1242,El capote,1746-10-07
+1243,La hija del capitán,1692-12-06
+1244,Oblómov,1738-03-28
+1245,El idiota,1900-10-16
+1246,La dama del perrito,1847-11-06
+1247,La muerte de Iván Ilich,2024-08-25
+1248,Las noches blancas,1686-10-03
+1249,La dama de picas,1949-09-09
+1250,Un mes en el campo,1663-06-10
+1251,Los demonios,1596-05-04
+1252,El jugador,1992-06-25
+1253,Primer amor,1811-05-09
+1254,El genji monogatari,1821-09-27
+1255,Kokoro,1703-03-25
+1256,El guardián del lago,2001-12-18
+1257,La casa de las bellas durmientes,1541-03-25
+1258,Tokio blues,1747-05-04
+1259,Kafka en la orilla,1962-05-04
+1260,El marino que perdió la gracia del mar,1664-01-04
+1261,La llave,1982-08-28
+1262,El sabor de la gloria,1962-09-28
+1263,Confesiones de una máscara,1967-08-11
+1264,El crisantemo y la espada,1508-08-31
+1265,Nieve ligera,1656-08-19
+1266,El ruido del tiempo,1804-08-17
+1267,Silencio,1509-10-11
+1268,El libro del té,1967-09-01
+1269,El arte de la guerra,1715-09-26
+1270,Sueño en el pabellón rojo,1855-01-25
+1271,Viaje al Oeste,1844-02-24
+1272,A la orilla del agua,2016-12-12
+1273,El romance de los tres reinos,1655-07-03
+1274,La hierba delgada,1993-10-21
+1275,Vida y muerte en Shanghai,1894-11-29
+1276,La fortaleza asediada,1516-03-16
+1277,Diario de un loco,1678-12-02
+1278,Río del olvido,1845-01-19
+1279,El sol también sale,1522-05-13
+1280,La luna brillante,1859-10-13
+1281,Las mil y una noches,1773-12-26
+1282,El libro de los días,1691-08-08
+1283,Tiempo de los árabes,1680-07-14
+1284,La bahía de los sueños,1614-09-19
+1285,Azazeel,1817-09-11
+1286,El barco de Noé,1837-12-06
+1287,Frankenstein en Bagdad,1817-11-20
+1288,Las puertas del paraíso,1668-12-31
+1289,El sabor de la miel,1849-03-25
+1290,Las mujeres de Cachemira,1552-04-08
+1291,La ciudadela,1571-05-10
+1292,Tierra de almendros,1942-05-04
+1293,La Odisea,1652-09-15
+1294,La Ilíada,2013-12-08
+1295,Edipo Rey,1684-06-09
+1296,Antígona,1500-05-05
+1297,Medea,1804-02-28
+1298,La República,1684-04-08
+1299,Ética a Nicómaco,1581-08-09
+1300,Las nubes,1596-02-29
+1301,Zorba el griego,1838-01-26
+1302,Alejandría,1556-12-26
+1303,La Eneida,1996-01-08
+1304,La metamorfosis,1594-08-15
+1305,El asno de oro,1844-04-16
+1306,Cartas a Lucilio,1604-05-23
+1307,De la brevedad de la vida,1836-12-24
+1308,Meditaciones,1842-07-19
+1309,Los doce césares,1951-10-29
+1310,El satiricón,1687-01-08
+1311,Las metamorfosis,1823-01-17
+1312,La guerra de las Galias,1721-03-05
+1313,Pippi Calzaslargas,1724-12-23
+1314,La chica del dragón tatuado,1602-07-22
+1315,Los emigrantes,1915-01-10
+1316,El juego de Ender,1791-01-19
+1317,El tambor de hojalata,1782-03-16
+1318,Los viajes de Gulliver,1852-11-21
+1319,La novela de Genji,1715-12-20
+1320,El caballo ciego,1843-09-15
+1321,La casa del silencio,2011-09-28
+1322,Nieve,1865-10-09
+1323,Return And Echo,1894-07-27
+1324,L' Abîme Vieux,1585-11-30
+1325,Die Schatten Rot,1875-03-07
+1326,Mémoire Dans Vol,1762-11-24
+1327,Fog And Dawn,1670-05-31
+1328,El Estrella Del Corazón,1698-01-08
+1329,Brillante Fuego,1981-03-25
+1330,Eterno Orologio,1785-10-11
+1331,Noche Y Mar,1877-12-12
+1332,Os Negro Névoa No Espelho,1943-08-01
+1333,Ponte No Fogo,1598-01-08
+1334,Nero Eco,1642-03-17
+1335,Cuore Di Marea,1682-06-11
+1336,Inverno E Luz,2008-05-29
+1337,Los Eterno Noche De Jardín,1560-09-14
+1338,Invisible Tormenta,2022-01-31
+1339,Retour Dans Vent,1962-11-17
+1340,A Caminho No Osso,1935-01-13
+1341,L' Vol Dans Brouillard,1826-03-26
+1342,Die Wunde Hell,1573-08-25
+1343,El Salvaje Arena Del Ceniza,1580-10-22
+1344,Unsichtbar Spiegel,1647-06-27
+1345,Les Errant Hiver Du Ville,1816-10-11
+1346,Éternel Sable,1857-11-21
+1347,O Lua Selvagem,2017-05-11
+1348,Silencio Y Arena,1644-07-13
+1349,Lost Wind,1881-10-30
+1350,L' Vent Dans Sable,1580-12-09
+1351,Stern Im Stern,1955-07-07
+1352,El Ceniza De Camino,1579-03-28
+1353,Dawn And Dawn,1879-10-28
+1354,Espelho De Trovão,1653-01-31
+1355,Rot Flut,1820-11-30
+1356,Wind Und Wind,1550-03-24
+1357,Le Segreto Memoria Del Nebbia,1757-08-17
+1358,El Ceniza Secreto,1521-06-12
+1359,The Wild Secret Of Shadow,1735-07-27
+1360,O Vento Velho,2008-03-06
+1361,A Ponte De Noite,1590-02-06
+1362,La Labyrinthe Fragile,1587-01-19
+1363,Il Segreto Stella Del Ritorno,1808-03-19
+1364,The Door Wild,1868-02-23
+1365,Versunken Abgrund,1559-11-21
+1366,Morgen Und Tür,1588-05-09
+1367,Das Unendlich Sand Von Wind,1696-12-10
+1368,Der Ewig Sand Von Feuer,1977-08-02
+1369,As Ponte Secreto,1540-05-09
+1370,Le Marea Nel Ponte,1930-12-01
+1371,Las Trueno Del Arena,1869-01-31
+1372,The Bone Of Bridge,1875-02-12
+1373,Luce Nel Ritorno,1592-05-22
+1374,La Silence Vieux,1894-08-23
+1375,Ceniza De Jardín,1775-03-21
+1376,As Velho Destino No Inverno,1873-03-25
+1377,Il Casa Del Cammino,1662-10-17
+1378,A Secreto Vento De Labirinto,1581-08-04
+1379,I Notte Eterno,1722-10-29
+1380,A Ponte No Promessa,1858-04-03
+1381,Feuer Des Grenze,1776-09-10
+1382,Doré Sable,1816-12-10
+1383,Clock And Clock,1524-04-01
+1384,Os Relógio Do Terra,1523-04-23
+1385,Fire Beyond Secret,1780-05-13
+1386,Il Silenzio Del Sabbia,1843-05-08
+1387,Hueso Y Vuelo,1777-09-20
+1388,O Frágil Luz Do Ponte,1571-05-14
+1389,Die Wunde Ewig,1736-04-11
+1390,L' Désert Labyrinthe De Fleuve,1761-09-16
+1391,Ville Et Vol,1748-03-03
+1392,I Deserto Volo Del Città,1518-10-27
+1393,Frontière Et Étoile,1793-02-15
+1394,Der Letzt Knochen Im Herz,1902-07-21
+1395,White Moon,1688-06-26
+1396,Fuoco E Destino,1538-02-24
+1397,Noche En Promesa,1571-09-27
+1398,The City Fragile,1689-09-25
+1399,Névoa E Relógio,1764-03-12
+1400,A Eterno Rio No Lua,1694-07-11
+1401,La Cendre Fragile,1663-02-04
+1402,Nebel Und Flut,1903-03-27
+1403,Os Ponte De Voo,1738-11-27
+1404,El Marea Del Herida,1605-09-13
+1405,Cinza E Trovão,1501-04-02
+1406,Die Fern Echo Im Nebel,1758-05-05
+1407,Relógio No Relógio,1615-01-29
+1408,The Earth Wandering,1997-04-30
+1409,Desierto Mar,1989-04-30
+1410,The Wild Silence Of Flight,1770-12-01
+1411,Étoile Du Cœur,1959-01-14
+1412,La Sogno Nel Ritorno,1976-06-20
+1413,Secreto Y Mar,1985-10-02
+1414,La Hundido Sueño De Corazón,1603-11-30
+1415,L' Lointain Chemin Dans Cendre,1772-02-17
+1416,Deserto Silenzio,1646-01-24
+1417,Morgen Im Abgrund,1857-05-20
+1418,As Abismo De Ferida,1807-08-02
+1419,L' Silence Du Étoile,1662-01-19
+1420,El Jardín En Jardín,1720-11-14
+1421,Wind Of Sand,1899-07-31
+1422,I Notte Nel Stella,1790-07-05
+1423,Sueño Y Frontera,2019-06-01
+1424,Golden Mirror,1945-06-14
+1425,O Coração No Trovão,1552-10-06
+1426,Viento De Fuego,1599-05-27
+1427,Memoria De Frontera,1905-08-02
+1428,The Road Wandering,1569-09-14
+1429,L' Ombre Sauvage,1698-11-11
+1430,Der Versprechen Im Schatten,2008-04-30
+1431,Le Lumière De Abîme,1856-04-04
+1432,Las Ciudad En Invierno,1729-05-11
+1433,As Secreto Promessa No Silêncio,1778-10-05
+1434,L' Lune Noir,1934-02-18
+1435,La Hundido Vuelo En Secreto,1549-08-28
+1436,Città Di Cuore,1897-10-16
+1437,A Distante Vento No Areia,1840-04-28
+1438,Vieux Ville,1575-09-07
+1439,La Invisible Feu Du Silence,2018-12-16
+1440,The Thunder Of Fog,1583-05-12
+1441,Os Promessa No Cidade,1632-02-07
+1442,Der Uhr Des Garten,1676-07-28
+1443,Las Perdido Río En Mar,1799-02-23
+1444,Der Stille Von Stadt,1573-09-23
+1445,Brillant Nuit,1708-02-08
+1446,The Labyrinth In Echo,1538-07-04
+1447,Der Echo Des Herz,1638-08-16
+1448,Destino Nel Nebbia,1856-06-03
+1449,La Blanco Estrella Del Eco,1503-09-20
+1450,Eco E Tempesta,1566-01-31
+1451,O Destino Do Sonho,1684-10-26
+1452,Segredo E Trovão,1678-07-10
+1453,Labirinto E Promessa,2001-09-30
+1454,Secret Écho,1929-03-24
+1455,Tür Und Morgen,1837-02-18
+1456,Los Estrella Desierto,1732-12-17
+1457,Sand And Light,1829-11-06
+1458,Die Labyrinth Von Weg,1649-05-05
+1459,Estrella En Mar,1552-08-31
+1460,Le Destin De Ombre,1645-01-11
+1461,River And Promise,1878-09-04
+1462,Vento Do Promessa,1659-04-04
+1463,Les Ville Du Porte,1610-12-26
+1464,Doré Nuit,1647-11-09
+1465,Die Flut Im Erde,1915-07-04
+1466,Le Chemin De Ombre,2010-09-14
+1467,La Destino De Laberinto,1990-03-01
+1468,The Road Bright,1660-03-09
+1469,Sueño Y Aurora,2014-07-03
+1470,Verloren Nacht,1642-10-23
+1471,Les Ville Du Ombre,1721-12-28
+1472,L' Vent De Maison,1501-01-26
+1473,Le Casa Vecchio,1718-02-16
+1474,I Rosso Sogno Nel Stella,1614-11-06
+1475,Das Schicksal Geheim,1804-04-22
+1476,Le Silenzioso Luna Del Tuono,1726-06-10
+1477,Eternal Earth,1512-04-06
+1478,Silencio De Jardín,1755-09-22
+1479,The Infinite Mirror Of Silence,1671-11-08
+1480,Die Alt Donner Des Stille,1587-07-29
+1481,I Alba Del Stella,1738-04-20
+1482,Perduto Nebbia,1726-04-04
+1483,Lua Do Fronteira,1573-06-28
+1484,Ponte Di Volo,1570-09-04
+1485,Trovão De Coração,1849-04-17
+1486,Le Abisso Di Vento,1778-08-28
+1487,Tierra En Memoria,1626-02-26
+1488,Vento De Noite,1844-10-08
+1489,Das Weiß Rückkehr Im Feuer,1918-05-27
+1490,Inverno No Terra,1771-08-15
+1491,O Labirinto Brilhante,2018-04-19
+1492,El Viejo Aurora De Fuego,1721-06-30
+1493,Arena De Reloj,1738-07-16
+1494,The Storm In Winter,1548-06-29
+1495,Wunde Des Versprechen,1925-10-26
+1496,Les Invisible Maison Dans Lune,1825-12-28
+1497,I Triste Cammino Del Cammino,1897-09-15
+1498,El Jardín De Invierno,1778-04-21
+1499,Los Blanco Regreso De Arena,1914-08-22
+1500,Rio E Silêncio,1785-12-25
+1501,I Selvaggio Luna Nel Sogno,1505-02-02
+1502,Il Cuore Invisibile,1536-11-10
+1503,La Silence De Tempête,1916-05-29
+1504,Tempestade E Noite,1745-09-04
+1505,Le Tempesta Nel Labirinto,1582-11-13
+1506,I Nero Segreto Del Abisso,1522-09-29
+1507,The Flight Red,1758-12-25
+1508,Mond Und Flut,1617-09-07
+1509,Le Labyrinthe Dans Silence,1735-03-12
+1510,The Abyss Infinite,1753-03-12
+1511,Spiegel Von Asche,1796-02-28
+1512,Fleuve Et Tonnerre,1847-05-30
+1513,Fuego Y Jardín,1779-12-21
+1514,Abismo No Osso,1509-01-19
+1515,Las Silencio Frágil,1793-10-29
+1516,El Brillante Frontera Del Corazón,2022-12-18
+1517,L' Rouge Abîme De Feu,1520-12-16
+1518,Ritorno Del Sabbia,1734-08-11
+1519,Espelho De Névoa,1984-04-20
+1520,Ciudad En Destino,1682-05-09
+1521,Haus Und Wunde,1548-11-12
+1522,Infinito Trueno,1792-07-31
+1523,The Secret Beyond Dawn,1602-04-18
+1524,Desierto Sombra,1944-06-16
+1525,O Fronteira De Eco,1544-03-29
+1526,Der Grenze Fern,2023-07-23
+1527,The Sand Of Moon,1870-10-28
+1528,Fragile Blessure,1970-02-23
+1529,Sombra Do Relógio,1514-02-21
+1530,Les Hiver Vieux,1570-07-11
+1531,Dawn And Garden,1889-04-26
+1532,Salvaje Jardín,2005-09-10
+1533,Las Desierto Herida En Viento,1962-06-21
+1534,La Eterno Casa Di Destino,1612-04-22
+1535,Wandering Abyss,1970-07-06
+1536,Luna Y Sombra,1520-08-26
+1537,Rouge Marée,1644-03-16
+1538,Destiny And Earth,1968-02-24
+1539,Le Cœur Du Blessure,1544-09-29
+1540,Le Silenzioso Vento Nel Destino,1854-06-02
+1541,Le Dorato Silenzio Del Porta,1988-11-11
+1542,La Sauvage Abîme Dans Ville,1996-07-09
+1543,Schwarz Herz,1928-06-30
+1544,Jardín Y Trueno,1749-08-10
+1545,Abismo Y Ciudad,1951-04-17
+1546,Les Vieux Os Dans Retour,1980-05-14
+1547,Perdido Estrella,1961-04-04
+1548,Stern Und Knochen,1835-03-28
+1549,Der Stadt Im Abgrund,2019-06-11
+1550,I Rosso Labirinto Nel Ferita,1598-01-08
+1551,Lejano Espejo,1645-03-22
+1552,Abgrund Und Asche,1562-06-05
+1553,Estrella Y Marea,1742-11-03
+1554,Las Espejo Viejo,1990-09-28
+1555,Mond Im Flut,1599-04-16
+1556,Eterno Stella,1802-08-18
+1557,Los Puente Lejano,2008-05-26
+1558,Vecchio Cammino,1584-12-25
+1559,Wandering Star,1875-05-10
+1560,Os Caminho Triste,1706-09-15
+1561,Le Luna Nel Cenere,1903-10-28
+1562,Eternal City,1970-04-07
+1563,Sturm Und Rückkehr,1767-11-26
+1564,Flight And River,1914-05-13
+1565,Das Stadt Unendlich,1810-06-08
+1566,Frontière Et Aube,1986-08-14
+1567,Mond Und Herz,1833-01-21
+1568,Desert Road,1905-11-10
+1569,Die Stille Wüst,1953-07-10
+1570,Fire Of Bridge,1897-09-10
+1571,L' Abîme De Jardin,1931-03-11
+1572,The White Light In Flight,1698-12-22
+1573,O Luz De Memória,1800-02-21
+1574,A Jardim Afundado,1599-11-30
+1575,Osso E Ombra,1798-12-21
+1576,Old River,1884-04-09
+1577,Los Laberinto Viejo,1536-02-10
+1578,Le Giardino Di Volo,1620-06-17
+1579,Las Perdido Ceniza En Viento,1514-04-30
+1580,Lumière Et Brouillard,1731-12-11
+1581,Secreto Vuelo,2014-05-17
+1582,A Silencioso Silêncio No Aurora,1987-02-03
+1583,Road And Silence,1698-06-27
+1584,Os Frágil Segredo Do Noite,1560-11-24
+1585,Labyrinthe De Jardin,2005-01-24
+1586,Der Feuer Rot,1874-01-17
+1587,Nacht Im Uhr,1937-12-28
+1588,A Inverno Do Abismo,1710-09-26
+1589,Der Garten Letzt,1596-06-03
+1590,Coração No Regresso,1868-02-19
+1591,The Invisible Door In Wound,2023-06-20
+1592,Lua E Luz,1534-02-16
+1593,Tempestade E Espelho,1588-11-19
+1594,Rückkehr Und Traum,1663-06-11
+1595,Die Stille Still,1544-09-27
+1596,Secret Frontière,1697-07-17
+1597,I Triste Labirinto Del Abisso,1869-12-07
+1598,Désert Mémoire,1825-12-07
+1599,The Ash Golden,1743-08-20
+1600,House In Bridge,1534-02-11
+1601,Clock Of Moon,2013-01-23
+1602,Verloren Fluss,1974-06-20
+1603,El Sombra Del Memoria,1870-09-13
+1604,Silencio De Viento,1506-11-20
+1605,Tempesta Nel Segreto,1535-07-26
+1606,Velho Casa,1706-05-14
+1607,El Destino En Trueno,1811-02-01
+1608,Los Sueño Desierto,1780-12-03
+1609,Der Weiß Schatten Im Fluss,1571-04-13
+1610,The Sunken Road In Destiny,1729-01-09
+1611,As Branco Sombra Do Coração,1545-06-20
+1612,Brillante Corazón,1544-09-17
+1613,Río De Marea,1785-11-02
+1614,Moon In Mirror,1867-10-12
+1615,As Areia No Sombra,1582-04-08
+1616,L' Maison Désert,1848-03-16
+1617,Il Perduto Cenere Nel Terra,1896-09-09
+1618,Terra E Vento,1852-03-19
+1619,Eterno Trovão,1684-09-01
+1620,Le Doré Cœur De Labyrinthe,2010-09-21
+1621,Abismo Y Luna,1618-08-16
+1622,Os Sombra De Osso,1520-11-22
+1623,House And Tide,1820-11-17
+1624,O Porta Perdido,1981-06-04
+1625,La Lontano Luce Di Tuono,1645-03-30
+1626,Porte Dans Sable,1686-11-12
+1627,Eterno Espelho,1768-04-14
+1628,Las Tierra Del Frontera,1924-10-29
+1629,Old Night,1531-09-10
+1630,Die Abgrund Unendlich,1596-03-10
+1631,The Distant City In Night,1520-12-20
+1632,Mirror And Flight,1502-06-13
+1633,The Road Lost,1718-06-01
+1634,Clock In Thunder,1502-08-29
+1635,Der Labyrinth Im Wind,1853-03-29
+1636,The House In Abyss,1927-09-02
+1637,Los Luna Del Espejo,1707-12-17
+1638,The Eternal Storm Of Abyss,1783-11-11
+1639,Die Letzt Mond Im Geheimnis,1889-08-21
+1640,Desierto Puente,1906-03-14
+1641,Los Arena Del Laberinto,1556-02-06
+1642,Promesa Y Trueno,1531-01-31
+1643,La Segreto Porta Del Frontiera,1695-10-25
+1644,Luna E Luna,1717-09-16
+1645,Fern Uhr,1513-06-18
+1646,Destiny And Flight,1831-06-20
+1647,Promesa Y Arena,1858-11-08
+1648,O Porta Secreto,1870-04-07
+1649,Eterno Vento,1870-12-29
+1650,Destino Y Soledad,1792-04-13
+1651,Caminho E Sombra,1560-12-27
+1652,Os Eterno Promessa Do Ponte,1675-12-08
+1653,Ombra E Tuono,1542-08-27
+1654,Le Lointain Tempête Du Marée,1973-07-14
+1655,Die Versprechen Im Schicksal,1892-09-12
+1656,Ritorno E Sabbia,1822-11-22
+1657,La Silencio Errante,1958-04-03
+1658,El Corazón Brillante,1734-03-03
+1659,As Distante Rio De Segredo,1673-01-26
+1660,Labirinto Di Giardino,1902-08-09
+1661,Blessure Dans Abîme,1794-02-06
+1662,Las Espejo Del Arena,1582-10-23
+1663,Der Unendlich Rückkehr Von Uhr,1986-05-31
+1664,Wild Weg,1539-08-22
+1665,The Fire Beyond Door,1577-12-22
+1666,Labirinto E Maré,1675-11-04
+1667,White Secret,1821-09-20
+1668,Branco Maré,1990-03-10
+1669,Wild Erinnerung,1886-03-29
+1670,A Regresso No Rio,1699-08-01
+1671,Cendre Et Frontière,1935-11-03
+1672,Fluss Und Fluss,1789-03-27
+1673,Mirror In Ash,1550-05-03
+1674,The Abyss Wandering,2013-05-20
+1675,Casa E Notte,1856-09-04
+1676,La Vecchio Luna Di Marea,1562-02-27
+1677,Le Ferita Infinito,1923-11-04
+1678,Coração Do Areia,1756-01-06
+1679,El Desierto Tierra De Tormenta,1989-04-22
+1680,The Dawn Of Bridge,1528-12-12
+1681,La Espejo Negro,1527-09-28
+1682,Distant Bridge,1738-06-17
+1683,Fragile Étoile,1888-05-11
+1684,The Road Old,1989-12-15
+1685,The Moon Beyond House,1551-08-20
+1686,Der Stille Des Versprechen,1550-08-31
+1687,Perdu Mémoire,1879-09-03
+1688,Los Aurora Del Regreso,1742-06-01
+1689,Traum Und Garten,1776-08-09
+1690,Le Terra Segreto,1518-02-06
+1691,Il Bianco Ritorno Nel Eco,1622-12-12
+1692,The Flight Golden,1564-05-05
+1693,Last Winter,2009-04-08
+1694,Volo E Orologio,1842-10-28
+1695,Tide Of Destiny,1835-09-06
+1696,Infinito Porta,1619-09-21
+1697,Lune Dans Cendre,1921-06-05
+1698,Os Cidade Secreto,1845-02-02
+1699,El Ceniza En Destino,1515-09-09
+1700,La Ponte Errante,1732-03-15
+1701,Sauvage Ombre,1765-04-24
+1702,Il Ponte Ultimo,1793-05-26
+1703,Chemin Et Cendre,1790-03-02
+1704,Noche En Niebla,1978-04-03
+1705,Wild Ash,2022-05-02
+1706,Maré Do Trovão,1878-11-28
+1707,Hundido Aurora,1879-12-25
+1708,A Regresso Selvagem,1981-11-02
+1709,Quiet Moon,1825-11-10
+1710,El Abismo Lejano,1720-04-22
+1711,Last Fog,1633-02-22
+1712,Versprechen Und Haus,1794-05-20
+1713,Las Silencio Del Tormenta,1639-08-20
+1714,Aurora Do Trovão,1892-07-19
+1715,Promesa Del Hueso,2015-05-24
+1716,Alt Flut,1932-01-06
+1717,Der Labyrinth Von Flug,1917-10-14
+1718,Fuoco Nel Ombra,1551-01-18
+1719,Le Nebbia Di Memoria,1872-04-29
+1720,Callado Herida,1867-11-29
+1721,Frontiera Di Tempesta,1531-06-15
+1722,Las Corazón Triste,1977-07-31
+1723,Las Fuego Salvaje,1772-04-23
+1724,As Noite No Aurora,1824-12-22
+1725,La Chemin Fragile,1811-05-15
+1726,Las Invierno Rojo,1667-09-29
+1727,As Silêncio Eterno,1848-08-12
+1728,Cendre De Promesse,1690-01-30
+1729,Il Osso Del Casa,1797-07-02
+1730,Les Étoile De Retour,1786-11-05
+1731,Versprechen Und Mond,1597-10-25
+1732,Los Reloj Del Ceniza,2011-01-28
+1733,As Errante Coração Do Cinza,1688-05-18
+1734,I Triste Osso Nel Cuore,1694-12-21
+1735,Dream In Garden,1752-07-26
+1736,Der Nebel Ewig,1911-09-04
+1737,Cœur Et Silence,1549-07-03
+1738,Asche Von Grenze,1612-07-24
+1739,Silêncio E Memória,1688-02-19
+1740,The Night Black,2001-06-26
+1741,La Fiume Di Ponte,1786-01-09
+1742,Letzt Labyrinth,1662-05-05
+1743,Cammino Del Terra,1769-08-18
+1744,O Silêncio Triste,2018-04-07
+1745,Le Cendre Noir,1622-08-25
+1746,Deserto Relógio,1956-11-23
+1747,Osso E Rio,1585-08-13
+1748,Errant Blessure,1911-10-11
+1749,Ferida Do Casa,1818-05-16
+1750,Cinza E Promessa,1695-02-10
+1751,Ferida Do Sombra,1607-12-28
+1752,Triste Abîme,1734-09-25
+1753,Miroir De Mémoire,1750-03-13
+1754,Ville Dans Ombre,1903-12-20
+1755,A Luz Silencioso,1815-05-03
+1756,Deserto Tuono,1710-12-23
+1757,Orologio E Notte,1862-11-08
+1758,La Nuit Secret,1783-09-19
+1759,The White Tide Beyond House,1563-11-26
+1760,Thunder And Memory,1681-07-26
+1761,Sturm Und Geheimnis,1774-07-01
+1762,La Sogno Silenzioso,1880-01-27
+1763,Jardín Del Invierno,1973-01-20
+1764,Bone In Ash,1544-07-04
+1765,La Fuoco Nel Cenere,2017-11-21
+1766,City And Silence,1722-12-22
+1767,Vieux Hiver,1591-10-28
+1768,Abismo E Caminho,1695-04-08
+1769,Le Aube Dans Miroir,1656-03-29
+1770,Secreto Casa,1889-12-20
+1771,Le Fiume Di Sogno,1639-07-24
+1772,Las Destino En Sueño,1557-06-24
+1773,Le Fragile Frontiera Di Ritorno,1744-01-24
+1774,Nebbia Del Segreto,1608-02-28
+1775,Las Arena Del Marea,1635-04-21
+1776,La Camino En Herida,1579-12-23
+1777,Light Beyond Sand,1823-07-02
+1778,The Secret Ash In Thunder,1835-02-20
+1779,A Rio De Abismo,1683-08-22
+1780,I Ritorno Nel Sabbia,1936-07-16
+1781,I Sabbia Nero,1699-05-27
+1782,Le Segreto Del Osso,1833-11-21
+1783,Stern Im Flut,1604-04-05
+1784,I Segreto Promessa Del Silenzio,1680-08-01
+1785,Errant Labyrinthe,1710-05-01
+1786,Los Aurora Salvaje,1551-09-12
+1787,Das Echo Des Stille,1658-05-19
+1788,O Maré De Eco,1674-07-22
+1789,La Errante Marea Del Luna,1760-03-28
+1790,Marée Du Feu,1544-09-30
+1791,Bright Bridge,1606-11-25
+1792,Nacht Und Geheimnis,1934-10-02
+1793,Hell Sturm,1514-06-27
+1794,The Promise Sad,1738-06-22
+1795,Destin Et Rêve,1789-12-02
+1796,Errante Laberinto,1542-04-29
+1797,O Regresso Último,1608-09-04
+1798,Ville Dans Tempête,1836-04-24
+1799,Frágil Terra,1890-03-29
+1800,Le Casa Del Marea,1609-11-21
+1801,Los Puente Negro,1793-08-28
+1802,La Brillant Labyrinthe De Brouillard,1681-01-06
+1803,Brilhante Ponte,1712-04-01
+1804,Ferita Del Terra,1938-06-01
+1805,Alt Erde,1942-12-03
+1806,Le Casa Del Cenere,1703-06-03
+1807,Soledad Y Río,1563-09-10
+1808,Abîme Et Nuit,2005-08-12
+1809,L' Miroir Invisible,1663-12-12
+1810,Casa E Maré,1680-12-18
+1811,Luna Nel Terra,1585-02-05
+1812,Promesse Et Labyrinthe,1902-01-26
+1813,Las Soledad Último,1727-04-13
+1814,The Storm In City,1815-05-05
+1815,Nebbia E Marea,1889-05-13
+1816,Deserto Terra,1621-11-21
+1817,Distant Echo,1684-09-13
+1818,As Selvagem Rio No Promessa,1909-11-15
+1819,El Soledad Del Niebla,1901-02-04
+1820,Maison Et Frontière,1817-11-10
+1821,Le Fragile Brouillard De Silence,2005-11-16
+1822,Os Casa Dourado,1633-05-17
+1823,Les Blessure Calme,1826-06-17
+1824,Distant Abyss,1709-11-28
+1825,Garden In Moon,1953-11-26
+1826,The River Sunken,1870-08-20
+1827,Relógio No Abismo,1607-07-20
+1828,Hell Fluss,1720-02-20
+1829,The Night White,1984-12-31
+1830,Uhr Des Schicksal,1524-12-05
+1831,Nacht Und Feuer,1716-02-02
+1832,Rouge Pont,1515-11-15
+1833,Branco Luz,1929-02-11
+1834,House In Fog,1685-05-03
+1835,Le Mémoire Brillant,1722-12-19
+1836,O Terra Negro,1673-08-19
+1837,Segreto E Destino,1951-07-23
+1838,Echo Von Herz,1539-07-13
+1839,La Memoria Viejo,1903-01-31
+1840,The Silence Wild,1738-07-01
+1841,Los Río Del Invierno,1803-09-30
+1842,Chemin Et Brouillard,1630-10-02
+1843,Infinite Clock,1686-06-18
+1844,Las Silencio Blanco,1950-05-13
+1845,La Destin Blanc,1824-06-05
+1846,The Light Last,1761-05-05
+1847,Sombra De Cidade,1514-08-11
+1848,The Winter In Wound,1613-10-26
+1849,A Secreto Trovão De Maré,1752-01-16
+1850,Invisível Névoa,1800-04-05
+1851,Secret Et Cœur,1572-11-05
+1852,Les Marée Brillant,1946-09-11
+1853,Wandernd Stern,1853-04-29
+1854,The Garden Beyond Heart,1884-03-18
+1855,Erde Im Uhr,1764-08-14
+1856,A Negro Areia De Labirinto,1638-11-27
+1857,Garden And Silence,1969-05-11
+1858,Le Dernier Miroir Dans Labyrinthe,1764-09-06
+1859,Golden Feuer,1594-04-10
+1860,Eterno Eco,1574-01-23
+1861,Giardino Nel Terra,1517-12-17
+1862,A Névoa Último,2006-06-24
+1863,Erinnerung Von Stille,1646-03-06
+1864,O Afundado Osso De Relógio,1980-11-01
+1865,Il Luminoso Porta Del Fuoco,1856-03-26
+1866,The Silence In Fog,1759-12-01
+1867,As Sombra De Sonho,1537-02-02
+1868,Negro Hueso,1962-03-04
+1869,Traurig Stern,1570-11-29
+1870,Los Soledad De Niebla,1666-01-18
+1871,Hueso Y Eco,1872-06-24
+1872,Invisible Viento,1804-08-23
+1873,La Cammino Di Sogno,1807-09-29
+1874,Wind Und Nebel,1991-01-24
+1875,Noite Do Trovão,1518-08-22
+1876,Le Écho Du Cendre,2004-04-07
+1877,Silence And Winter,1924-11-23
+1878,Le Infinito Terra Del Sogno,1958-10-18
+1879,The Star Infinite,1664-04-16
+1880,Sauvage Secret,2008-04-17
+1881,Il Alba Del Cuore,1964-05-15
+1882,Das Geheimnis Ewig,1931-07-12
+1883,L' Mémoire Englouti,1727-03-19
+1884,Las Corazón Dorado,1547-05-31
+1885,Sand Des Donner,1903-02-08
+1886,Eterno Tierra,1927-12-16
+1887,Rosso Vento,1729-08-28
+1888,Cuore E Inverno,1699-07-07
+1889,Les Secret Secret Dans Blessure,1711-07-12
+1890,Errante Invierno,1959-11-18
+1891,Marea E Specchio,1737-10-12
+1892,Herida En Secreto,1823-11-15
+1893,Horloge Et Tonnerre,1904-12-02
+1894,Tormenta Y Viento,1539-04-22
+1895,Branco Osso,1715-03-18
+1896,Noche De Memoria,1648-01-26
+1897,Die Sand Geheim,1644-06-24
+1898,The Earth Infinite,1845-10-30
+1899,Das Nebel Von Echo,1541-05-24
+1900,Tuono E Sogno,2021-10-26
+1901,Abisso Del Cenere,1522-03-20
+1902,Echo Beyond Mirror,1738-08-16
+1903,Segreto Di Osso,1856-07-14
+1904,Lune Et Chemin,1958-04-28
+1905,Versprechen Und Asche,2010-03-23
+1906,As Regresso No Caminho,1947-09-10
+1907,El Callado Tormenta De Secreto,1834-07-28
+1908,The Secret River In Bridge,2016-02-18
+1909,Das Echo Letzt,1914-08-30
+1910,Retour Et Terre,1837-05-05
+1911,Desert River,1670-06-24
+1912,Le Errant Jardin Dans Mémoire,1626-03-08
+1913,Los Errante Destino Del Mar,1905-10-04
+1914,Die Uhr Im Nebel,1770-06-30
+1915,The Ash In Echo,1957-08-21
+1916,Inverno Di Ombra,1713-01-19
+1917,La Último Ciudad Del Ceniza,1867-02-02
+1918,Segreto E Luna,2022-08-12
+1919,Los Blanco Ceniza En Ceniza,1921-06-10
+1920,Miroir Et Sable,1688-08-02
+1921,Le Stella Triste,1833-09-29
+1922,Città E Giardino,1693-09-18
+1923,Sombra Do Espelho,1562-03-19
+1924,Verloren Abgrund,1987-03-28
+1925,Schicksal Und Spiegel,1966-08-05
+1926,Dorato Ombra,1552-12-25
+1927,Le Promesse Du Blessure,1735-02-20
+1928,La Silence De Nuit,1968-05-24
+1929,Die Winter Im Fluss,1684-05-15
+1930,The Border Beyond Winter,1595-10-31
+1931,Ville Et Jardin,1649-08-18
+1932,Mirror Beyond Moon,1724-10-10
+1933,Callado Sombra,1957-07-11
+1934,Distante Destino,1907-02-08
+1935,Le Jardin Dans Ombre,1509-06-15
+1936,Le Perduto Nebbia Nel Ombra,1706-07-26
+1937,Wind And River,1572-04-07
+1938,Luna Y Luna,1594-03-30
+1939,Weiß Stern,1590-01-13
+1940,O Triste Luz De Voo,1538-07-08
+1941,Der Abgrund Des Spiegel,1602-11-05
+1942,Le Maison Dans Écho,1990-12-15
+1943,Mirror Of Heart,1714-11-23
+1944,Las Secreto Fuego En Destino,1963-11-12
+1945,Wild Versprechen,1732-09-30
+1946,Fleuve Et Sable,1562-05-02
+1947,O Trovão De Aurora,1675-11-06
+1948,Moon In Fire,1879-12-29
+1949,Road And Moon,1581-08-19
+1950,L' Rêve Secret,1793-09-26
+1951,The Night Of Memory,1758-10-31
+1952,The Abyss Desert,1969-12-24
+1953,La Inverno Di Nebbia,1908-04-09
+1954,La Rêve Dans Brouillard,1971-06-25
+1955,Das Echo Wandernd,1581-09-10
+1956,Afundado Inverno,1679-09-13
+1957,Traurig Nacht,1991-04-09
+1958,Labirinto E Casa,1725-05-26
+1959,Bridge Of City,1986-09-30
+1960,As Maré De Regresso,1610-05-27
+1961,Luna Y Noche,1531-03-19
+1962,L' Feu Du Feu,1929-02-26
+1963,The Sand Of Fire,1633-09-16
+1964,The Bright Shadow Beyond Mirror,1851-04-22
+1965,Fragile Nebbia,1522-05-15
+1966,Los Secreto Aurora En Reloj,1681-01-20
+1967,Specchio E Ritorno,1979-04-23
+1968,Il Specchio Segreto,1876-06-27
+1969,Jardín En Corazón,1637-02-16
+1970,La Fleuve Du Vent,1711-11-08
+1971,Os Selvagem Regresso De Coração,1908-11-15
+1972,As Infinito Osso No Ferida,1910-08-13
+1973,The Infinite Garden Of Flight,1951-02-21
+1974,El Invierno Errante,1600-02-10
+1975,Las Regreso Brillante,2012-11-21
+1976,Die Weiß Versprechen Des Brücke,1792-05-14
+1977,Der Traurig Grenze Des Asche,1848-07-02
+1978,Trovão De Caminho,1688-04-11
+1979,Le Secret De Cœur,1703-09-15
+1980,Rot Traum,1956-02-15
+1981,Maison De Aube,1918-06-01
+1982,Regreso De Soledad,1684-08-28
+1983,Bianco Sogno,1644-10-14
+1984,Last Border,1987-10-25
+1985,Frontière Et Cendre,1751-01-08
+1986,L' Cendre De Terre,1771-06-24
+1987,L' Miroir Désert,1652-04-25
+1988,The Lost Sand Beyond Road,1678-01-10
+1989,I Alba Del Segreto,1729-07-24
+1990,Porta E Notte,1560-10-12
+1991,La Labyrinthe De Jardin,1688-06-18
+1992,Fragile Memory,1785-03-11
+1993,Black Heart,1965-09-04
+1994,Specchio E Sogno,1638-12-05
+1995,Vuelo Del Eco,1821-09-09
+1996,Asche Und Geheimnis,1650-05-20
+1997,La Noir Os Du Abîme,1532-02-07
+1998,Hundido Hueso,1781-11-22
+1999,As Coração Infinito,1898-07-13
+2000,Ash And Dream,1744-05-23

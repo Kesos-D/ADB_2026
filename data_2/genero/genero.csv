@@ -1,0 +1,301 @@
+id_genero,nombre
+1,Novela
+2,Fantasía
+3,Ciencia ficción
+4,Romance
+5,Misterio
+6,Terror
+7,Drama
+8,Aventura
+9,Historia
+10,Biografía
+11,Poesía
+12,Filosofía
+13,Thriller
+14,Literatura clásica
+15,Realismo mágico
+16,Policial
+17,Suspenso
+18,Comedia
+19,Distopía
+20,Utopía
+21,Acción
+22,Literatura juvenil
+23,Literatura infantil
+24,Crónica
+25,Ensayo
+26,Autoayuda
+27,Psicología
+28,Ciencia
+29,Tecnología
+30,Economía
+31,Fantasía épica
+32,Fantasía urbana
+33,Fantasía oscura
+34,Alta fantasía
+35,Baja fantasía
+36,Ciencia ficción dura
+37,Ciencia ficción blanda
+38,Space opera
+39,Cyberpunk
+40,Steampunk
+41,Biopunk
+42,Post-apocalíptico
+43,Apocalíptico
+44,Terror gótico
+45,Terror psicológico
+46,Terror cósmico
+47,Body horror
+48,Slasher
+49,Misterio de cuarto cerrado
+50,Misterio cozy
+51,Novela negra
+52,Novela policíaca
+53,Espionaje
+54,Thriller psicológico
+55,Thriller legal
+56,Thriller médico
+57,Thriller tecnológico
+58,Suspenso psicológico
+59,Western
+60,Bélico
+61,Militar
+62,Naval
+63,Histórico
+64,Novela histórica
+65,Histórico romántico
+66,Romance histórico
+67,Romance contemporáneo
+68,Romance paranormal
+69,Romance erótico
+70,Romance de época
+71,Chick lit
+72,Novela romántica
+73,Drama romántico
+74,Drama social
+75,Drama psicológico
+76,Tragedia
+77,Comedia romántica
+78,Comedia negra
+79,Comedia dramática
+80,Sátira
+81,Parodia
+82,Humor
+83,Aventura marina
+84,Aventura espacial
+85,Aventura de selva
+86,Novela de viajes
+87,Literatura de viajes
+88,Aventuras
+89,Supervivencia
+90,Deportes
+91,Autobiografía
+92,Memorias
+93,Diario
+94,Epistolar
+95,Confesión
+96,Reportaje
+97,Periodismo
+98,Ensayo filosófico
+99,Ensayo científico
+100,Ensayo político
+101,Ensayo literario
+102,Divulgación científica
+103,Divulgación histórica
+104,Filosofía antigua
+105,Filosofía moderna
+106,Filosofía política
+107,Ética
+108,Metafísica
+109,Epistemología
+110,Lógica
+111,Espiritualidad
+112,Religión
+113,Teología
+114,Mitología
+115,Esoterismo
+116,Ocultismo
+117,Astrología
+118,Nuevo pensamiento
+119,Meditación
+120,Mindfulness
+121,Desarrollo personal
+122,Superación personal
+123,Motivación
+124,Coaching
+125,Liderazgo
+126,Negocios
+127,Gestión
+128,Marketing
+129,Emprendimiento
+130,Finanzas
+131,Inversión
+132,Contabilidad
+133,Administración
+134,Recursos humanos
+135,Productividad
+136,Emprendimiento social
+137,Economía política
+138,Microeconomía
+139,Macroeconomía
+140,Sociología
+141,Antropología
+142,Arqueología
+143,Etnografía
+144,Demografía
+145,Geografía
+146,Cartografía
+147,Geología
+148,Astronomía
+149,Astrofísica
+150,Cosmología
+151,Física
+152,Química
+153,Biología
+154,Genética
+155,Botánica
+156,Zoología
+157,Ecología
+158,Medio ambiente
+159,Naturaleza
+160,Matemáticas
+161,Estadística
+162,Informática
+163,Programación
+164,Inteligencia artificial
+165,Robótica
+166,Ciberseguridad
+167,Redes
+168,Ingeniería
+169,Arquitectura
+170,Medicina
+171,Enfermería
+172,Nutrición
+173,Salud
+174,Psicología clínica
+175,Psiquiatría
+176,Neurociencia
+177,Psicoanálisis
+178,Sexualidad
+179,Pedagogía
+180,Educación
+181,Didáctica
+182,Derecho
+183,Criminología
+184,Ciencias políticas
+185,Geopolítica
+186,Relaciones internacionales
+187,Diplomacia
+188,Historia antigua
+189,Historia medieval
+190,Historia moderna
+191,Historia contemporánea
+192,Prehistoria
+193,Egiptología
+194,Estudios clásicos
+195,Estudios culturales
+196,Estudios de género
+197,Feminismo
+198,Ecología política
+199,Activismo
+200,Guerra
+201,Espionaje histórico
+202,Biografía política
+203,Biografía deportiva
+204,Biografía artística
+205,Biografía musical
+206,Música
+207,Arte
+208,Historia del arte
+209,Pintura
+210,Escultura
+211,Fotografía
+212,Cine
+213,Teatro
+214,Danza
+215,Ópera
+216,Moda
+217,Diseño
+218,Gastronomía
+219,Cocina
+220,Repostería
+221,Vinos
+222,Jardinería
+223,Manualidades
+224,Bricolaje
+225,Decoración
+226,Mascotas
+227,Animales
+228,Naturaleza salvaje
+229,Montaña
+230,Senderismo
+231,Ciclismo
+232,Running
+233,Fitness
+234,Yoga
+235,Artes marciales
+236,Fútbol
+237,Baloncesto
+238,Tenis
+239,Ajedrez
+240,Juegos de mesa
+241,Videojuegos
+242,Fantasía romántica
+243,Romance oscuro
+244,Dark academia
+245,Dark romance
+246,New adult
+247,Young adult
+248,Middle grade
+249,Álbum ilustrado
+250,Cómic
+251,Novela gráfica
+252,Manga
+253,Manhwa
+254,Webcómic
+255,Tira cómica
+256,Fábula
+257,Leyenda
+258,Cuento
+259,Microrrelato
+260,Antología
+261,Relato corto
+262,Novela coral
+263,Novela negra policial
+264,Novela gótica
+265,Novela victoriana
+266,Novela picaresca
+267,Novela pastoril
+268,Novela bizantina
+269,Novela de caballerías
+270,Novela epistolar
+271,Novela de formación
+272,Novela experimental
+273,Novela de terror
+274,Novela de aventuras
+275,Novela de misterio
+276,Novela romántica histórica
+277,Literatura erótica
+278,Literatura de terror
+279,Literatura fantástica
+280,Literatura de ciencia ficción
+281,Literatura del absurdo
+282,Literatura existencialista
+283,Literatura posmoderna
+284,Literatura modernista
+285,Romanticismo
+286,Realismo
+287,Naturalismo
+288,Simbolismo
+289,Surrealismo
+290,Vanguardismo
+291,Futurismo
+292,Dadaísmo
+293,Barroco
+294,Rococó
+295,Renacimiento
+296,Ilustración
+297,Costumbrismo
+298,Regionalismo
+299,Criollismo
+300,Literatura latinoamericana
