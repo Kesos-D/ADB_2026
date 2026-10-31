@@ -3,14 +3,16 @@
    ------------------------------------------------------------
    Triggers y procedimientos almacenados de la biblioteca.
 
-   Semantica Opcion A:
-     ACTIVO    = prestamo abierto, dentro de plazo.
-                 fecha_devolucion IS NULL y fecha_limite >= hoy.
-     ATRASADO  = prestamo abierto, fuera de plazo.
-                 fecha_devolucion IS NULL y fecha_limite < hoy.
-     DEVUELTO  = prestamo devuelto.
-                 Si la devolucion es posterior a fecha_limite se
-                 genera una multa de dias_retraso * 2.50.
+   Semantica:
+     ACTIVO    = prestamo abierto. El socio aun conserva el
+                 ejemplar. fecha_devolucion IS NULL.
+                 Puede estar vencido y sigue siendo ACTIVO.
+     ATRASADO  = prestamo devuelto fuera de plazo.
+                 fecha_devolucion IS NOT NULL y mayor que
+                 fecha_limite. Genera multa.
+     DEVUELTO  = prestamo devuelto dentro de plazo.
+                 fecha_devolucion IS NOT NULL y menor o igual
+                 que fecha_limite. No genera multa.
 
    Alcance:
      - 4 triggers.
@@ -21,26 +23,33 @@
 
    Orden recomendado:
      1) 00_cargar_tablas_madres.sql
-     2) full_data_csv.sql
+     2) 01_cargar_prestamos_csv.sql   (si se usan los CSV)
+        o full_data_csv.sql           (si se generan los datos)
      3) triggers_procedimientos.sql   (este archivo)
      4) 99_validacion.sql
 
    Importante:
-     - Ejecutar este archivo DESPUES de generar los datos.
-     - El generador inserta 30,000 prestamos en bloque y los
-       triggers rechazarian estados intermedios.
-     - Este archivo elimina los objetos anteriores que ya no
-       forman parte del diseno.
+     - Ejecutar este archivo DESPUES de cargar o generar los datos.
+     - Los triggers rechazan estados intermedios durante una carga
+       masiva, por eso se instalan al final.
    ============================================================ */
 
 USE Proyecto;
+GO
+
+SET NOCOUNT ON;
+SET XACT_ABORT ON;
+GO
+
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
 GO
 
 /* ============================================================
    2. TRIGGERS
    ============================================================ */
 
-/* 2.1 Valida que las fechas y el estado sean coherentes. */
+/* 2.1 Valida las fechas y el estado del prestamo. */
 CREATE OR ALTER TRIGGER dbo.trg_prestamo_estado_fechas
 ON dbo.prestamo
 AFTER INSERT, UPDATE
@@ -54,29 +63,33 @@ BEGIN
         WHERE i.fecha_limite < CAST(i.fecha_prestamo AS DATE)
            OR (i.fecha_devolucion IS NOT NULL AND i.fecha_devolucion < i.fecha_prestamo)
            OR (i.fecha_devolucion IS NOT NULL AND i.fecha_devolucion > SYSDATETIME())
-           OR (i.estado IN ('ACTIVO', 'ATRASADO') AND i.fecha_devolucion IS NOT NULL)
-           OR (i.estado = 'DEVUELTO' AND i.fecha_devolucion IS NULL)
+           OR (i.estado = 'ACTIVO' AND i.fecha_devolucion IS NOT NULL)
+           OR (
+                i.estado = 'ATRASADO'
+                AND (
+                    i.fecha_devolucion IS NULL
+                    OR CAST(i.fecha_devolucion AS DATE) <= i.fecha_limite
+                )
+              )
+           OR (
+                i.estado = 'DEVUELTO'
+                AND (
+                    i.fecha_devolucion IS NULL
+                    OR CAST(i.fecha_devolucion AS DATE) > i.fecha_limite
+                )
+              )
     )
     BEGIN;
-        THROW 50201, 'Prestamo inconsistente: revise fecha_limite, fecha_devolucion y estado.', 1;
-    END;
-
-    IF EXISTS (
-        SELECT 1
-        FROM inserted i
-        WHERE (i.estado = 'ACTIVO' AND i.fecha_limite < CAST(GETDATE() AS DATE))
-           OR (i.estado = 'ATRASADO' AND i.fecha_limite >= CAST(GETDATE() AS DATE))
-    )
-    BEGIN;
-        THROW 50202, 'Estado incompatible con la fecha_limite: ACTIVO debe estar vigente y ATRASADO debe estar vencido.', 1;
+        THROW 50201, 'Prestamo inconsistente: ACTIVO sin devolucion, ATRASADO tardio o DEVUELTO a tiempo.', 1;
     END;
 END;
 GO
 
-/* 2.2 Genera la multa cuando se registra una devolucion tardia. */
+/* 2.2 Genera la multa cuando el prestamo se devuelve tarde
+       (estado ATRASADO). */
 CREATE OR ALTER TRIGGER dbo.trg_prestamo_multa
 ON dbo.prestamo
-AFTER UPDATE
+AFTER INSERT, UPDATE
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -88,12 +101,9 @@ BEGIN
         CAST(DATEDIFF(DAY, i.fecha_limite, CAST(i.fecha_devolucion AS DATE)) * 2.50 AS DECIMAL(10,2)),
         i.id_prestamo
     FROM inserted i
-    LEFT JOIN deleted d
-        ON d.id_prestamo = i.id_prestamo
-    WHERE i.estado = 'DEVUELTO'
+    WHERE i.estado = 'ATRASADO'
       AND i.fecha_devolucion IS NOT NULL
       AND CAST(i.fecha_devolucion AS DATE) > i.fecha_limite
-      AND (d.id_prestamo IS NULL OR d.fecha_devolucion IS NULL)
       AND NOT EXISTS (
             SELECT 1
             FROM dbo.multa m
@@ -102,7 +112,7 @@ BEGIN
 END;
 GO
 
-/* 2.3 Impide mas de 3 prestamos abiertos por socio. */
+/* 2.3 Impide mas de 3 prestamos ACTIVO por socio. */
 CREATE OR ALTER TRIGGER dbo.trg_prestamo_max_activos
 ON dbo.prestamo
 AFTER INSERT, UPDATE
@@ -112,21 +122,23 @@ BEGIN
 
     IF EXISTS (
         SELECT 1
-        FROM inserted i
-        INNER JOIN dbo.prestamo p
-            ON p.id_socio = i.id_socio
-        WHERE i.estado IN ('ACTIVO', 'ATRASADO')
-          AND p.estado IN ('ACTIVO', 'ATRASADO')
-        GROUP BY i.id_socio
+        FROM dbo.prestamo p
+        WHERE p.estado = 'ACTIVO'
+          AND p.id_socio IN (
+              SELECT i.id_socio
+              FROM inserted i
+              WHERE i.estado = 'ACTIVO'
+          )
+        GROUP BY p.id_socio
         HAVING COUNT(*) > 3
     )
     BEGIN;
-        THROW 50203, 'El socio no puede tener mas de 3 prestamos abiertos (ACTIVO o ATRASADO).', 1;
+        THROW 50203, 'El socio no puede tener mas de 3 prestamos ACTIVO.', 1;
     END;
 END;
 GO
 
-/* 2.4 Un ejemplar no puede estar en dos prestamos abiertos. */
+/* 2.4 Un ejemplar no puede estar en dos prestamos ACTIVO. */
 CREATE OR ALTER TRIGGER dbo.trg_prestamo_ejemplar_unico_abierto
 ON dbo.prestamo_ejemplar
 AFTER INSERT, UPDATE
@@ -143,13 +155,13 @@ BEGIN
             ON pe.id_ejemplar = i.id_ejemplar
         INNER JOIN dbo.prestamo p2
             ON p2.id_prestamo = pe.id_prestamo
-        WHERE p.estado IN ('ACTIVO', 'ATRASADO')
-          AND p2.estado IN ('ACTIVO', 'ATRASADO')
+        WHERE p.estado = 'ACTIVO'
+          AND p2.estado = 'ACTIVO'
         GROUP BY i.id_ejemplar
         HAVING COUNT(DISTINCT pe.id_prestamo) > 1
     )
     BEGIN;
-        THROW 50204, 'El ejemplar ya esta asociado a otro prestamo abierto (ACTIVO o ATRASADO).', 1;
+        THROW 50204, 'El ejemplar ya esta asociado a otro prestamo ACTIVO.', 1;
     END;
 END;
 GO
@@ -173,7 +185,7 @@ BEGIN
     DECLARE @hoy DATE = CAST(GETDATE() AS DATE);
     DECLARE @estado_ejemplar VARCHAR(20);
     DECLARE @multas_pendientes INT;
-    DECLARE @abiertos INT;
+    DECLARE @activos INT;
 
     SET @id_prestamo = NULL;
 
@@ -215,13 +227,13 @@ BEGIN
         IF @multas_pendientes > 0
             THROW 50307, 'El socio tiene multas pendientes. No se puede prestar.', 1;
 
-        SELECT @abiertos = COUNT(*)
+        SELECT @activos = COUNT(*)
         FROM dbo.prestamo
         WHERE id_socio = @id_socio
-          AND estado IN ('ACTIVO', 'ATRASADO');
+          AND estado = 'ACTIVO';
 
-        IF @abiertos >= 3
-            THROW 50308, 'El socio ya tiene 3 prestamos abiertos.', 1;
+        IF @activos >= 3
+            THROW 50308, 'El socio ya tiene 3 prestamos ACTIVO.', 1;
 
         INSERT INTO dbo.prestamo
             (fecha_prestamo, fecha_limite, fecha_devolucion, estado, id_empleado, id_socio)
@@ -248,8 +260,8 @@ BEGIN
 END;
 GO
 
-/* 3.2 Registra la devolucion, calcula el retraso, recupera la
-       multa generada por el trigger y libera el ejemplar. */
+/* 3.2 Registra la devolucion. Deja ATRASADO si hay retraso y
+       DEVUELTO si esta dentro del plazo. */
 CREATE OR ALTER PROCEDURE dbo.usp_devolver_prestamo
     @id_prestamo        INT,
     @fecha_devolucion   DATETIME2(7) = NULL,
@@ -287,7 +299,8 @@ BEGIN
         IF @fecha_limite IS NULL
             THROW 50401, 'El prestamo no existe.', 1;
 
-        IF @fecha_dev_actual IS NOT NULL OR @estado_actual = 'DEVUELTO'
+        IF @fecha_dev_actual IS NOT NULL
+           OR @estado_actual IN ('ATRASADO', 'DEVUELTO')
             THROW 50402, 'El prestamo ya fue devuelto.', 1;
 
         IF @fecha_devolucion < @fecha_prestamo
@@ -302,15 +315,20 @@ BEGIN
             ELSE 0
         END;
 
+        SET @estado = CASE
+            WHEN @dias_retraso > 0 THEN 'ATRASADO'
+            ELSE 'DEVUELTO'
+        END;
+
+        SET @monto_multa = CAST(@dias_retraso * 2.50 AS DECIMAL(10,2));
+
         UPDATE dbo.prestamo
         SET fecha_devolucion = @fecha_devolucion,
-            estado = 'DEVUELTO'
+            estado = @estado
         WHERE id_prestamo = @id_prestamo;
 
-        SET @estado = 'DEVUELTO';
-
-        /* El trigger trg_prestamo_multa crea la multa si la
-           devolucion fue tardia. */
+        /* El trigger trg_prestamo_multa crea la multa cuando el
+           estado queda ATRASADO. */
         IF @dias_retraso > 0
         BEGIN
             SELECT
@@ -320,6 +338,7 @@ BEGIN
             WHERE id_prestamo = @id_prestamo;
         END;
 
+        /* Libera el ejemplar si ya no tiene prestamos ACTIVO. */
         UPDATE e
         SET e.estado = 'LIBRE'
         FROM dbo.ejemplar e
@@ -332,7 +351,7 @@ BEGIN
                 INNER JOIN dbo.prestamo p2
                     ON p2.id_prestamo = pe2.id_prestamo
                 WHERE pe2.id_ejemplar = e.id_ejemplar
-                  AND p2.estado IN ('ACTIVO', 'ATRASADO')
+                  AND p2.estado = 'ACTIVO'
               );
 
         COMMIT TRANSACTION;
@@ -389,19 +408,46 @@ BEGIN
 END;
 GO
 
-/* 3.4 Marca como ATRASADO los prestamos ACTIVO vencidos. */
-CREATE OR ALTER PROCEDURE dbo.usp_marcar_prestamos_atrasados
+/* 3.4 Marca una multa PENDIENTE como CANCELADO. */
+CREATE OR ALTER PROCEDURE dbo.usp_cancelar_multa
+    @id_multa   INT,
+    @estado     VARCHAR(15) OUTPUT
 AS
 BEGIN
     SET NOCOUNT ON;
+    SET XACT_ABORT ON;
 
-    UPDATE dbo.prestamo
-    SET estado = 'ATRASADO'
-    WHERE estado = 'ACTIVO'
-      AND fecha_devolucion IS NULL
-      AND fecha_limite < CAST(GETDATE() AS DATE);
+    DECLARE @estado_actual VARCHAR(15);
 
-    SELECT @@ROWCOUNT AS prestamos_actualizados;
+    SET @estado = NULL;
+
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        SELECT @estado_actual = estado
+        FROM dbo.multa
+        WHERE id_multa = @id_multa;
+
+        IF @estado_actual IS NULL
+            THROW 50601, 'La multa no existe.', 1;
+
+        IF @estado_actual <> 'PENDIENTE'
+            THROW 50602, 'Solo se puede cancelar una multa PENDIENTE.', 1;
+
+        UPDATE dbo.multa
+        SET estado = 'CANCELADO'
+        WHERE id_multa = @id_multa;
+
+        SET @estado = 'CANCELADO';
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        IF @@TRANCOUNT > 0
+            ROLLBACK TRANSACTION;
+
+        THROW;
+    END CATCH;
 END;
 GO
 

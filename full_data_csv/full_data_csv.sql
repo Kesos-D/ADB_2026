@@ -2,19 +2,26 @@
    full_data_csv.sql
    ------------------------------------------------------------
    Genera los datos de las tablas hijas de la base Proyecto
-   a partir de las tablas madre cargadas desde la carpeta data_2.
+   a partir de las tablas madre cargadas desde data_2.
 
-   Semantica Opcion A:
-     ACTIVO    = prestamo abierto, dentro de plazo.
-                 fecha_devolucion IS NULL y fecha_limite >= hoy.
-     ATRASADO  = prestamo abierto, fuera de plazo.
-                 fecha_devolucion IS NULL y fecha_limite < hoy.
-     DEVUELTO  = prestamo devuelto.
-                 Si la devolucion es posterior a fecha_limite,
-                 se genera una multa de dias_retraso * 2.50.
+   Semantica:
+     ACTIVO    = prestamo abierto. El socio aun conserva el
+                 ejemplar. fecha_devolucion IS NULL.
+                 Puede estar vencido y sigue siendo ACTIVO.
+     ATRASADO  = prestamo devuelto fuera de plazo.
+                 fecha_devolucion > fecha_limite.
+                 Genera una multa.
+     DEVUELTO  = prestamo devuelto dentro de plazo.
+                 fecha_devolucion <= fecha_limite.
+                 No genera multa.
 
-   Orden de ejecución:
-     1) 00_cargar_tablas_madres.sql   (solo si las tablas madre están vacías)
+   Distribucion de los 30,000 prestamos:
+     70% DEVUELTO  = 21,000
+     20% ATRASADO  =  6,000
+     10% ACTIVO    =  3,000
+
+   Orden de ejecucion:
+     1) 00_cargar_tablas_madres.sql   (solo si las tablas madre estan vacias)
      2) full_data_csv.sql             (este archivo)
      3) triggers_procedimientos.sql   (triggers y procedimientos)
      4) 99_validacion.sql             (opcional, solo consultas)
@@ -23,14 +30,14 @@
      - Base Proyecto creada con Proyecto.sql.
      - Tablas madre con datos: empleado, socio, libro, ejemplar,
        autor, editorial y genero.
-     - La tabla prestamo debe estar vacía para evitar duplicados.
+     - La tabla prestamo debe estar vacia para evitar duplicados.
 
    Importante:
      - Este script elimina al inicio los triggers de negocio conocidos
        para poder sembrar los datos sin validaciones intermedias.
        Al terminar, ejecuta triggers_procedimientos.sql para
        recrearlos.
-     - Si los triggers ya existían, quedan eliminados hasta que se
+     - Si los triggers ya existian, quedan eliminados hasta que se
        vuelva a ejecutar triggers_procedimientos.sql.
 
    Resultado esperado:
@@ -40,7 +47,7 @@
      - libro_autor         : 2,000 filas
      - prestamo            : 30,000 filas
      - prestamo_ejemplar   : 30,000 filas
-     - multa               : ~7,200 filas
+     - multa               : 6,000 filas (solo ATRASADO)
    ============================================================ */
 
 USE Proyecto;
@@ -55,45 +62,45 @@ GO
 -- ============================================================
 
 IF NOT EXISTS (SELECT 1 FROM dbo.empleado)
-BEGIN;
-    THROW 51001, 'La tabla empleado esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51001, 'La tabla empleado esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 IF NOT EXISTS (SELECT 1 FROM dbo.socio)
-BEGIN;
-    THROW 51002, 'La tabla socio esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51002, 'La tabla socio esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 IF NOT EXISTS (SELECT 1 FROM dbo.libro)
-BEGIN;
-    THROW 51003, 'La tabla libro esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51003, 'La tabla libro esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 IF NOT EXISTS (SELECT 1 FROM dbo.ejemplar)
-BEGIN;
-    THROW 51004, 'La tabla ejemplar esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51004, 'La tabla ejemplar esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 IF NOT EXISTS (SELECT 1 FROM dbo.autor)
-BEGIN;
-    THROW 51005, 'La tabla autor esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51005, 'La tabla autor esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 IF NOT EXISTS (SELECT 1 FROM dbo.editorial)
-BEGIN;
-    THROW 51006, 'La tabla editorial esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51006, 'La tabla editorial esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 IF NOT EXISTS (SELECT 1 FROM dbo.genero)
-BEGIN;
-    THROW 51007, 'La tabla genero esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
-END;
+BEGIN
+    ;THROW 51007, 'La tabla genero esta vacia. Ejecuta primero 00_cargar_tablas_madres.sql.', 1;
+END
 
 -- Evita duplicar 30,000 prestamos si el script se vuelve a ejecutar.
 IF EXISTS (SELECT 1 FROM dbo.prestamo)
-BEGIN;
-    THROW 51010, 'La tabla prestamo ya tiene datos. Limpiala antes de volver a ejecutar este script.', 1;
-END;
+BEGIN
+    ;THROW 51010, 'La tabla prestamo ya tiene datos. Limpiala antes de volver a ejecutar este script.', 1;
+END
 
 -- Los triggers de negocio se eliminan para que la carga masiva no
 -- rechace estados intermedios. Se recrean con
@@ -248,10 +255,12 @@ BEGIN TRY
 
     -- ========================================================
     -- 5. prestamo: 30,000 prestamos
-    --    80% DEVUELTO / 12% ATRASADO / 8% ACTIVO
-    --    - ACTIVO y ATRASADO no tienen fecha_devolucion.
-    --    - ATRASADO tiene fecha_limite en el pasado.
-    --    - 30% de los DEVUELTO se devuelven tarde y generan multa.
+    --    70% DEVUELTO / 20% ATRASADO / 10% ACTIVO
+    --    - ACTIVO: sin devolucion y con limite futuro.
+    --    - ATRASADO: devolucion posterior al limite.
+    --    - DEVUELTO: devolucion dentro del plazo.
+    --    - Los ACTIVO se reparten entre socios distintos para
+    --      respetar el maximo de 3 por socio.
     -- ========================================================
     PRINT '5/8 Generando prestamo...';
 
@@ -267,57 +276,78 @@ BEGIN TRY
     DECLARE @n_socios INT = (SELECT COUNT(*) FROM dbo.socio);
     DECLARE @n_empleados INT = (SELECT COUNT(*) FROM dbo.empleado);
     DECLARE @hoy DATE = CAST(GETDATE() AS DATE);
+    DECLARE @inicio_historico DATE = DATEADD(DAY, -1825, @hoy);
+    DECLARE @fin_historico DATE = DATEADD(DAY, -45, @hoy);
 
     ;WITH numeros AS (
-        SELECT 1 AS n
-        UNION ALL
-        SELECT n + 1
-        FROM numeros
-        WHERE n < @total
+        SELECT TOP (@total)
+            ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS n
+        FROM sys.all_objects a
+        CROSS JOIN sys.all_objects b
+    ), base AS (
+        SELECT
+            n.n,
+            CASE
+                WHEN (n.n - 1) % 10 < 7 THEN 'DEVUELTO'
+                WHEN (n.n - 1) % 10 < 9 THEN 'ATRASADO'
+                ELSE 'ACTIVO'
+            END AS estado,
+            ABS(CHECKSUM(NEWID()) % 1000000) AS azar_fecha,
+            ABS(CHECKSUM(NEWID()) % 1000000) AS azar_devolucion,
+            CASE
+                WHEN (n.n - 1) % 10 = 9
+                    THEN ((n.n / 10 - 1) % @n_socios) + 1
+                ELSE ((n.n - 1) % @n_socios) + 1
+            END AS socio_rn,
+            ((n.n - 1) % @n_empleados) + 1 AS empleado_rn
+        FROM numeros n
+    ), con_fecha AS (
+        SELECT
+            b.*,
+            CASE
+                WHEN b.estado = 'ACTIVO'
+                    THEN DATEADD(DAY, -(b.azar_fecha % 10), CAST(@hoy AS DATETIME2))
+                ELSE DATEADD(
+                        DAY,
+                        b.azar_fecha % (DATEDIFF(DAY, @inicio_historico, @fin_historico) + 1),
+                        CAST(@inicio_historico AS DATETIME2)
+                     )
+            END AS fecha_prestamo
+        FROM base b
     ), socios AS (
         SELECT
             id_socio,
-            ROW_NUMBER() OVER (ORDER BY NEWID()) AS rn
+            ROW_NUMBER() OVER (ORDER BY id_socio) AS rn
         FROM dbo.socio
     ), empleados AS (
         SELECT
             id_empleado,
-            ROW_NUMBER() OVER (ORDER BY NEWID()) AS rn
+            ROW_NUMBER() OVER (ORDER BY id_empleado) AS rn
         FROM dbo.empleado
-    ), generado AS (
-        SELECT
-            n.n,
-            ABS(CHECKSUM(NEWID()) % 100) AS azar,
-            ABS(CHECKSUM(NEWID()) % 100) AS azar_devolucion,
-            ABS(CHECKSUM(NEWID()) % 1000000) AS azar_fecha
-        FROM numeros n
     ), prestamo_base AS (
         SELECT
-            g.n,
-            g.azar,
-            g.azar_devolucion,
-            g.azar_fecha,
+            c.n,
+            c.estado,
+            c.azar_devolucion,
+            c.fecha_prestamo,
             s.id_socio,
             e.id_empleado,
             CASE
-                WHEN g.azar < 8 THEN 'ACTIVO'
-                WHEN g.azar < 20 THEN 'ATRASADO'
-                ELSE 'DEVUELTO'
-            END AS estado,
+                WHEN c.estado = 'ACTIVO'
+                    THEN DATEADD(DAY, 14 + (c.azar_devolucion % 5), CAST(c.fecha_prestamo AS DATE))
+                ELSE DATEADD(DAY, 14, CAST(c.fecha_prestamo AS DATE))
+            END AS fecha_limite,
             CASE
-                WHEN g.azar < 8
-                    THEN DATEADD(DAY, -(g.azar_fecha % 14), @hoy)
-                ELSE DATEADD(
-                        DAY,
-                        g.azar_fecha % (DATEDIFF(DAY, '2020-01-01', '2025-12-17') + 1),
-                        CAST('2020-01-01' AS DATE)
-                     )
-            END AS fecha_prestamo
-        FROM generado g
+                WHEN c.estado = 'ACTIVO' THEN NULL
+                WHEN c.estado = 'DEVUELTO'
+                    THEN DATEADD(DAY, 7 + (c.azar_devolucion % 8), c.fecha_prestamo)
+                ELSE DATEADD(DAY, 15 + (c.azar_devolucion % 16), c.fecha_prestamo)
+            END AS fecha_devolucion
+        FROM con_fecha c
         INNER JOIN socios s
-            ON s.rn = ((g.n - 1) % @n_socios) + 1
+            ON s.rn = c.socio_rn
         INNER JOIN empleados e
-            ON e.rn = ((g.n - 1) % @n_empleados) + 1
+            ON e.rn = c.empleado_rn
     )
     INSERT INTO dbo.prestamo
         (fecha_prestamo, fecha_limite, fecha_devolucion, estado, id_empleado, id_socio)
@@ -331,18 +361,8 @@ BEGIN TRY
         (id_prestamo, fecha_prestamo, fecha_limite, fecha_devolucion, estado)
     SELECT
         b.fecha_prestamo,
-        CASE
-            WHEN b.estado = 'ACTIVO'
-                THEN DATEADD(DAY, 14 + (ABS(CHECKSUM(NEWID()) % 8)), b.fecha_prestamo)
-            ELSE DATEADD(DAY, 14, b.fecha_prestamo)
-        END AS fecha_limite,
-        CASE
-            WHEN b.estado IN ('ACTIVO', 'ATRASADO')
-                THEN NULL
-            WHEN b.azar_devolucion < 30
-                THEN DATEADD(DAY, 15 + (ABS(CHECKSUM(NEWID()) % 15)), b.fecha_prestamo)
-            ELSE DATEADD(DAY, 7 + (ABS(CHECKSUM(NEWID()) % 8)), b.fecha_prestamo)
-        END AS fecha_devolucion,
+        b.fecha_limite,
+        b.fecha_devolucion,
         b.estado,
         b.id_empleado,
         b.id_socio
@@ -350,12 +370,13 @@ BEGIN TRY
     OPTION (MAXRECURSION 0);
 
     -- ========================================================
-    -- 6. Regla: maximo 3 prestamos abiertos (ACTIVO o ATRASADO)
-    --    por socio. El exceso se devuelve de forma puntual.
+    -- 6. Regla: maximo 3 prestamos ACTIVO por socio.
+    --    El reparto anterior asigna como maximo uno por socio,
+    --    pero se deja el ajuste por si cambia el volumen.
     -- ========================================================
-    PRINT '6/8 Ajustando maximo de prestamos abiertos por socio...';
+    PRINT '6/8 Ajustando maximo de prestamos ACTIVO por socio...';
 
-    ;WITH abiertos_ordenados AS (
+    ;WITH activos_ordenados AS (
         SELECT
             p.id_prestamo,
             ROW_NUMBER() OVER (
@@ -363,18 +384,14 @@ BEGIN TRY
                 ORDER BY p.fecha_prestamo, p.id_prestamo
             ) AS rn
         FROM dbo.prestamo p
-        WHERE p.estado IN ('ACTIVO', 'ATRASADO')
+        WHERE p.estado = 'ACTIVO'
     )
     UPDATE p
     SET
         estado = 'DEVUELTO',
-        fecha_devolucion = CASE
-            WHEN p.fecha_limite < CAST(SYSDATETIME() AS DATE)
-                THEN DATEADD(DAY, 1, CAST(p.fecha_limite AS DATETIME2))
-            ELSE SYSDATETIME()
-        END
+        fecha_devolucion = SYSDATETIME()
     FROM dbo.prestamo p
-    INNER JOIN abiertos_ordenados a
+    INNER JOIN activos_ordenados a
         ON a.id_prestamo = p.id_prestamo
     WHERE a.rn > 3;
 
@@ -385,20 +402,20 @@ BEGIN TRY
 
     -- Los ejemplares PRESTADO del CSV no representan necesariamente
     -- un prestamo abierto. Se liberan y luego se marcan los que si
-    -- quedan asociados a un prestamo ACTIVO o ATRASADO.
+    -- quedan asociados a un prestamo ACTIVO.
     UPDATE dbo.ejemplar
     SET estado = 'LIBRE'
     WHERE estado = 'PRESTADO';
 
-    -- Prestamos historicos (solo DEVUELTO): asignacion ciclica sobre
-    -- todos los ejemplares. Un ejemplar puede tener varios prestamos
-    -- historicos en distintas fechas.
+    -- Prestamos historicos (DEVUELTO y ATRASADO): asignacion ciclica
+    -- sobre todos los ejemplares. Un ejemplar puede tener varios
+    -- prestamos historicos en distintas fechas.
     ;WITH historicos AS (
         SELECT
             p.id_prestamo,
             ROW_NUMBER() OVER (ORDER BY p.fecha_prestamo, p.id_prestamo) AS rn
         FROM dbo.prestamo p
-        WHERE p.estado = 'DEVUELTO'
+        WHERE p.estado IN ('DEVUELTO', 'ATRASADO')
     ), copias AS (
         SELECT
             e.id_ejemplar,
@@ -419,10 +436,10 @@ BEGIN TRY
         WHERE pe.id_prestamo = h.id_prestamo
     );
 
-    DECLARE @abiertos INT = (
+    DECLARE @activos INT = (
         SELECT COUNT(*)
         FROM dbo.prestamo
-        WHERE estado IN ('ACTIVO', 'ATRASADO')
+        WHERE estado = 'ACTIVO'
     );
     DECLARE @libres INT = (
         SELECT COUNT(*)
@@ -430,18 +447,18 @@ BEGIN TRY
         WHERE estado = 'LIBRE'
     );
 
-    IF @abiertos > @libres
-    BEGIN;
-        THROW 51020, 'No hay suficientes ejemplares LIBRE para los prestamos abiertos (ACTIVO/ATRASADO).', 1;
-    END;
+    IF @activos > @libres
+    BEGIN
+        ;THROW 51020, 'No hay suficientes ejemplares LIBRE para los prestamos ACTIVO.', 1;
+    END
 
-    -- Prestamos abiertos: un ejemplar distinto por prestamo.
+    -- Prestamos ACTIVO: un ejemplar distinto por prestamo.
     ;WITH abiertos AS (
         SELECT
             p.id_prestamo,
             ROW_NUMBER() OVER (ORDER BY p.fecha_prestamo, p.id_prestamo) AS rn
         FROM dbo.prestamo p
-        WHERE p.estado IN ('ACTIVO', 'ATRASADO')
+        WHERE p.estado = 'ACTIVO'
     ), libres AS (
         SELECT
             e.id_ejemplar,
@@ -462,7 +479,7 @@ BEGIN TRY
         WHERE pe.id_prestamo = a.id_prestamo
     );
 
-    -- Marcar como PRESTADO unicamente los ejemplares con prestamo abierto.
+    -- Marcar como PRESTADO unicamente los ejemplares con prestamo ACTIVO.
     UPDATE e
     SET estado = 'PRESTADO'
     FROM dbo.ejemplar e
@@ -471,12 +488,12 @@ BEGIN TRY
         FROM dbo.prestamo p
         INNER JOIN dbo.prestamo_ejemplar pe
             ON pe.id_prestamo = p.id_prestamo
-        WHERE p.estado IN ('ACTIVO', 'ATRASADO')
+        WHERE p.estado = 'ACTIVO'
           AND pe.id_ejemplar = e.id_ejemplar
     );
 
     -- ========================================================
-    -- 8. multa: solo devoluciones tardias de prestamos DEVUELTO
+    -- 8. multa: solo para prestamos ATRASADO
     --    60% PAGADO / 30% PENDIENTE / 10% CANCELADO
     -- ========================================================
     PRINT '8/8 Generando multa...';
@@ -488,7 +505,7 @@ BEGIN TRY
             DATEDIFF(DAY, p.fecha_limite, CAST(p.fecha_devolucion AS DATE)) AS dias_retraso,
             ABS(CHECKSUM(NEWID()) % 10) AS azar
         FROM dbo.prestamo p
-        WHERE p.estado = 'DEVUELTO'
+        WHERE p.estado = 'ATRASADO'
           AND p.fecha_devolucion IS NOT NULL
           AND CAST(p.fecha_devolucion AS DATE) > p.fecha_limite
           AND NOT EXISTS (
@@ -513,50 +530,50 @@ BEGIN TRY
     -- Validaciones antes del COMMIT
     -- ========================================================
     IF (SELECT COUNT(*) FROM dbo.prestamo) <> 30000
-    BEGIN;
-        THROW 51030, 'La tabla prestamo no quedo con 30,000 filas.', 1;
-    END;
+    BEGIN
+        ;THROW 51030, 'La tabla prestamo no quedo con 30,000 filas.', 1;
+    END
 
     IF (SELECT COUNT(*) FROM dbo.prestamo_ejemplar) <> 30000
-    BEGIN;
-        THROW 51031, 'La tabla prestamo_ejemplar no quedo con 30,000 filas.', 1;
-    END;
+    BEGIN
+        ;THROW 51031, 'La tabla prestamo_ejemplar no quedo con 30,000 filas.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.libro l
         WHERE NOT EXISTS (SELECT 1 FROM dbo.libro_editorial le WHERE le.id_libro = l.id_libro)
     )
-    BEGIN;
-        THROW 51032, 'Hay libros sin editorial.', 1;
-    END;
+    BEGIN
+        ;THROW 51032, 'Hay libros sin editorial.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.libro l
         WHERE NOT EXISTS (SELECT 1 FROM dbo.libro_genero lg WHERE lg.id_libro = l.id_libro)
     )
-    BEGIN;
-        THROW 51033, 'Hay libros sin genero.', 1;
-    END;
+    BEGIN
+        ;THROW 51033, 'Hay libros sin genero.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.libro l
         WHERE NOT EXISTS (SELECT 1 FROM dbo.libro_autor la WHERE la.id_libro = l.id_libro)
     )
-    BEGIN;
-        THROW 51034, 'Hay libros sin autor.', 1;
-    END;
+    BEGIN
+        ;THROW 51034, 'Hay libros sin autor.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.prestamo p
         WHERE NOT EXISTS (SELECT 1 FROM dbo.prestamo_ejemplar pe WHERE pe.id_prestamo = p.id_prestamo)
     )
-    BEGIN;
-        THROW 51035, 'Hay prestamos sin ejemplar asociado.', 1;
-    END;
+    BEGIN
+        ;THROW 51035, 'Hay prestamos sin ejemplar asociado.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
@@ -565,68 +582,64 @@ BEGIN TRY
             FROM dbo.prestamo_ejemplar pe
             INNER JOIN dbo.prestamo p
                 ON p.id_prestamo = pe.id_prestamo
-            WHERE p.estado IN ('ACTIVO', 'ATRASADO')
+            WHERE p.estado = 'ACTIVO'
             GROUP BY pe.id_ejemplar
             HAVING COUNT(DISTINCT pe.id_prestamo) > 1
         ) x
     )
-    BEGIN;
-        THROW 51036, 'Hay ejemplares con mas de un prestamo abierto (ACTIVO/ATRASADO).', 1;
-    END;
+    BEGIN
+        ;THROW 51036, 'Hay ejemplares con mas de un prestamo ACTIVO.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM (
             SELECT id_socio
             FROM dbo.prestamo
-            WHERE estado IN ('ACTIVO', 'ATRASADO')
+            WHERE estado = 'ACTIVO'
             GROUP BY id_socio
             HAVING COUNT(*) > 3
         ) x
     )
-    BEGIN;
-        THROW 51037, 'Hay socios con mas de 3 prestamos abiertos (ACTIVO/ATRASADO).', 1;
-    END;
-
-    IF EXISTS (
-        SELECT 1
-        FROM dbo.prestamo
-        WHERE estado IN ('ACTIVO', 'ATRASADO')
-          AND fecha_devolucion IS NOT NULL
-    )
-    BEGIN;
-        THROW 51038, 'Hay prestamos ACTIVO/ATRASADO con fecha_devolucion.', 1;
-    END;
-
-    IF EXISTS (
-        SELECT 1
-        FROM dbo.prestamo
-        WHERE estado = 'DEVUELTO'
-          AND fecha_devolucion IS NULL
-    )
-    BEGIN;
-        THROW 51039, 'Hay prestamos DEVUELTO sin fecha_devolucion.', 1;
-    END;
-
-    IF EXISTS (
-        SELECT 1
-        FROM dbo.prestamo
-        WHERE estado = 'ATRASADO'
-          AND fecha_limite >= CAST(GETDATE() AS DATE)
-    )
-    BEGIN;
-        THROW 51040, 'Hay prestamos ATRASADO con fecha_limite vigente.', 1;
-    END;
+    BEGIN
+        ;THROW 51037, 'Hay socios con mas de 3 prestamos ACTIVO.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.prestamo
         WHERE estado = 'ACTIVO'
-          AND fecha_limite < CAST(GETDATE() AS DATE)
+          AND fecha_devolucion IS NOT NULL
     )
-    BEGIN;
-        THROW 51041, 'Hay prestamos ACTIVO con fecha_limite vencida.', 1;
-    END;
+    BEGIN
+        ;THROW 51038, 'Hay prestamos ACTIVO con fecha_devolucion.', 1;
+    END
+
+    IF EXISTS (
+        SELECT 1
+        FROM dbo.prestamo
+        WHERE estado = 'ATRASADO'
+          AND (
+              fecha_devolucion IS NULL
+              OR CAST(fecha_devolucion AS DATE) <= fecha_limite
+          )
+    )
+    BEGIN
+        ;THROW 51039, 'Hay prestamos ATRASADO sin una devolucion tardia.', 1;
+    END
+
+    IF EXISTS (
+        SELECT 1
+        FROM dbo.prestamo
+        WHERE estado = 'DEVUELTO'
+          AND (
+              fecha_devolucion IS NULL
+              OR CAST(fecha_devolucion AS DATE) > fecha_limite
+          )
+    )
+    BEGIN
+        ;THROW 51040, 'Hay prestamos DEVUELTO sin una devolucion dentro de plazo.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
@@ -635,9 +648,9 @@ BEGIN TRY
            OR (fecha_devolucion IS NOT NULL AND fecha_devolucion < fecha_prestamo)
            OR (fecha_devolucion IS NOT NULL AND fecha_devolucion > SYSDATETIME())
     )
-    BEGIN;
-        THROW 51042, 'Hay prestamos con fechas incoherentes o devolucion futura.', 1;
-    END;
+    BEGIN
+        ;THROW 51042, 'Hay prestamos con fechas incoherentes o devolucion futura.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
@@ -645,29 +658,40 @@ BEGIN TRY
         INNER JOIN dbo.prestamo p
             ON p.id_prestamo = m.id_prestamo
         WHERE m.monto <= 0
+           OR p.estado <> 'ATRASADO'
            OR p.fecha_devolucion IS NULL
-           OR p.estado <> 'DEVUELTO'
            OR CAST(p.fecha_devolucion AS DATE) <= p.fecha_limite
+           OR m.fecha_multa <> CAST(p.fecha_devolucion AS DATE)
            OR m.monto <> CAST(DATEDIFF(DAY, p.fecha_limite, CAST(p.fecha_devolucion AS DATE)) * 2.50 AS DECIMAL(10, 2))
     )
-    BEGIN;
-        THROW 51043, 'Hay multas sin una devolucion tardia valida o con monto incorrecto.', 1;
-    END;
+    BEGIN
+        ;THROW 51043, 'Hay multas sin una devolucion tardia valida o con monto incorrecto.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.prestamo p
-        WHERE p.fecha_devolucion IS NOT NULL
-          AND CAST(p.fecha_devolucion AS DATE) > p.fecha_limite
+        WHERE p.estado = 'ATRASADO'
           AND NOT EXISTS (
               SELECT 1
               FROM dbo.multa m
               WHERE m.id_prestamo = p.id_prestamo
           )
     )
-    BEGIN;
-        THROW 51044, 'Hay devoluciones tardias sin multa.', 1;
-    END;
+    BEGIN
+        ;THROW 51044, 'Hay prestamos ATRASADO sin multa.', 1;
+    END
+
+    IF EXISTS (
+        SELECT 1
+        FROM dbo.multa m
+        INNER JOIN dbo.prestamo p
+            ON p.id_prestamo = m.id_prestamo
+        WHERE p.estado <> 'ATRASADO'
+    )
+    BEGIN
+        ;THROW 51048, 'Hay multas asociadas a prestamos que no estan ATRASADO.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
@@ -679,17 +703,17 @@ BEGIN TRY
               INNER JOIN dbo.prestamo p
                   ON p.id_prestamo = pe.id_prestamo
               WHERE pe.id_ejemplar = e.id_ejemplar
-                AND p.estado IN ('ACTIVO', 'ATRASADO')
+                AND p.estado = 'ACTIVO'
           )
     )
-    BEGIN;
-        THROW 51045, 'Hay ejemplares PRESTADO sin prestamo abierto.', 1;
-    END;
+    BEGIN
+        ;THROW 51045, 'Hay ejemplares PRESTADO sin prestamo ACTIVO.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
         FROM dbo.prestamo p
-        WHERE p.estado IN ('ACTIVO', 'ATRASADO')
+        WHERE p.estado = 'ACTIVO'
           AND EXISTS (
               SELECT 1
               FROM dbo.prestamo_ejemplar pe
@@ -699,9 +723,9 @@ BEGIN TRY
                 AND e.estado <> 'PRESTADO'
           )
     )
-    BEGIN;
-        THROW 51046, 'Hay prestamos abiertos cuyo ejemplar no esta PRESTADO.', 1;
-    END;
+    BEGIN
+        ;THROW 51046, 'Hay prestamos ACTIVO cuyo ejemplar no esta PRESTADO.', 1;
+    END
 
     IF EXISTS (
         SELECT 1
@@ -712,9 +736,9 @@ BEGIN TRY
             HAVING COUNT(*) > 1
         ) x
     )
-    BEGIN;
-        THROW 51047, 'Hay prestamos con mas de un ejemplar asociado.', 1;
-    END;
+    BEGIN
+        ;THROW 51047, 'Hay prestamos con mas de un ejemplar asociado.', 1;
+    END
 
     COMMIT TRANSACTION;
     PRINT 'Datos generados correctamente.';
